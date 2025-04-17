@@ -1664,7 +1664,35 @@ input::placeholder {
     background-color: #f87c56; /* New hover color */
     border-color: #f87c56; /* Change border color on hover */
 }
-
+.tagline-slider {
+	width: 100%;
+	overflow: hidden;
+	background-color: #ffffff; /* Optional */
+	padding: 5px 0;
+  }
+  
+  .tagline-track {
+	display: flex;
+	width: max-content;
+	animation: slideRight 10s linear infinite;
+  }
+  
+  .tagline-track span {
+	white-space: nowrap;
+	font-weight: bold;
+	font-size: 16px;
+	color: #333;
+  }
+	
+  @keyframes slideRight {
+	0% {
+	  transform: translateX(-100%);
+	}
+	100% {
+	  transform: translateX(100%);
+	}
+  }
+  
 
   
 
