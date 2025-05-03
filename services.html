@@ -27,16 +27,17 @@
 		  <div class="container">
 			<!-- Logo -->
 			<a class="navbar-brand" href="index.html">
-				<img src="images/logo1.jpg" style="height:60px; width: 150px;" alt="Logo" class="logo">
-				<div class="tagline-slider">
-					<div class="tagline-track">
-					  <span>TRUE comfort — TRUE life — TRUE care &nbsp;&nbsp;&nbsp;</span>
-					</div>
-				  </div>
+			  <img src="images/logo1.jpg" style="height:100px; width: 150px;" alt="Logo" class="logo">
+			  <div class="tagline-slider">
+				<div class="tagline-track">
+				  <span>TRUE comfort — TRUE life — TRUE care &nbsp;&nbsp;&nbsp;</span>
+				</div>
+			  </div>
 			</a>
-			
+	  
 			<!-- Navbar Toggler Button for Mobile -->
-			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+			<button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+			  aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 			  <span class="navbar-toggler-icon"></span>
 			</button>
 	  
@@ -45,29 +46,89 @@
 			  <ul class="navbar-nav gap-3">
 				<li class="nav-item"><a class="nav-link text-dark fw-bold nav-hover" style="font-size: large;" href="index.html">Home</a></li>
 				<li class="nav-item"><a class="nav-link text-dark fw-bold nav-hover" style="font-size: large;" href="about.html">About us</a></li>
-				<li class="nav-item"><a class="nav-link text-dark fw-bold nav-hover" style="font-size: large;" href="services.html">Services</a></li>
+				
+				<!-- Services Dropdown -->
+				<li class="nav-item dropdown">
+				  <a class="nav-link dropdown-toggle text-dark fw-bold nav-hover" style="font-size: large;" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+					Services
+				  </a>
+				  <ul class="dropdown-menu">
+					<!-- Main headings -->
+					<li class="dropdown-item"><a href="#" class="dropdown-toggle" style="color: black;">24/7 Nursing Care</a>
+					  <ul class="submenu">
+						<li><a class="submenu-item" href="#">Daily Living Activities Assistance</a></li>
+						<li><a class="submenu-item" href="#">Acute & Chronic Care</a></li>
+						<li><a class="submenu-item" href="#">Elderly Care</a></li>
+						<li><a class="submenu-item" href="#">Dementia Care</a></li>
+						<li><a class="submenu-item" href="#">Wound Care</a></li>
+						<li><a class="submenu-item" href="#">Post-Surgical Care</a></li>
+						<li><a class="submenu-item" href="#">IV Therapy / Blood Collection</a></li>
+						<li><a class="submenu-item" href="#">Enteral feeding</a></li>
+						<li><a class="submenu-item" href="#">Tracheostomy Care</a></li>
+						<li><a class="submenu-item" href="#">Catheter Care</a></li>
+					  </ul>
+					</li>
+					<li class="dropdown-item"><a href="#" class="dropdown-toggle" style="color: black;">Doctor Consultation</a>
+					  <ul class="submenu">
+						<li><a class="submenu-item" href="#">Management of Chronic Medical Conditions</a></li>
+						<li><a class="submenu-item" href="#">Dementia Care</a></li>
+						<li><a class="submenu-item" href="#">Pain Management</a></li>
+						<li><a class="submenu-item" href="#">IV & IM Medication Administration</a></li>
+						<li><a class="submenu-item" href="#">Regular home visit as per patient <br> requirement</a></li>
+					  </ul>
+					</li>
+					<li class="dropdown-item"><a href="#" class="dropdown-toggle" style="color: black;">Physiotherapy</a>
+					  <ul class="submenu">
+						<li><a class="submenu-item" href="#">Stroke Rehabilitation</a></li>
+						<li><a class="submenu-item" href="#">Geriatric Rehabilitation</a></li>
+						<li><a class="submenu-item" href="#">Post-Surgical Rehabilitation</a></li>
+						<li><a class="submenu-item" href="#">Orthopedic Rehabilitation</a></li>
+						<li><a class="submenu-item" href="#">Neuro-Muscular Rehabilitation</a></li>
+						<li><a class="submenu-item" href="#">Pediatric Rehabilitation</a></li>
+						<li><a class="submenu-item" href="#">Amputation Rehabilitation</a></li>
+						<li><a class="submenu-item" href="#">Pain Management</a></li>
+					  </ul>
+					</li>
+					<li class="dropdown-item"><a href="#" class="dropdown-toggle" style="color: black;">Speech Therapy</a>
+					  <ul class="submenu">
+						<li><a class="submenu-item" href="#">Adult & Pediatric</a></li>
+						<li><a class="submenu-item" href="#">Cognitive Linguistic Function</a></li>
+						<li><a class="submenu-item" href="#">Swallowing Training and Education</a></li>
+						<li><a class="submenu-item" href="#">Speech Sound Production</a></li>
+						<li><a class="submenu-item" href="#">Voice Therapy</a></li>
+						<li><a class="submenu-item" href="#">Reading and Writing Training</a></li>
+					  </ul>
+					</li>
+					<li class="dropdown-item"><a href="#" class="dropdown-toggle" style="color: black;">Occupational Therapy</a>
+					  <ul class="submenu">
+						<li><a class="submenu-item" href="#">Dyslexia</a></li>
+						<li><a class="submenu-item" href="#">Autism</a></li>
+						<li><a class="submenu-item" href="#">ADHD</a></li>
+						<li><a class="submenu-item" href="#">Physical Disabilities</a></li>
+						<li><a class="submenu-item" href="#">Neurological Disorders</a></li>
+						<li><a class="submenu-item" href="#">Spinal Cord Injuries</a></li>
+						<li><a class="submenu-item" href="#">Cerebral Palsy</a></li>
+						<li><a class="submenu-item" href="#">Developmental Delays</a></li>
+						<li><a class="submenu-item" href="#">Post-Amputation</a></li>
+						<li><a class="submenu-item" href="#">Visual Impairment</a></li>
+					  </ul>
+					</li>
+				  </ul>
+				</li>
+	  
 				<li class="nav-item"><a class="nav-link text-dark fw-bold nav-hover" style="font-size: large;" href="contact.html">Contact Us</a></li>
 				<li class="nav-item">
-					<a class="btn-slide" href="#" data-bs-toggle="modal" data-bs-target="#brochureModal">
-						<span class="circle">
-							<i class="fa fa-file-pdf"></i>        
-						</span>
-						<span class="title">Brochure</span>
-						<span class="title title-hover">Download Now</span>
-					</a>
+				  <a class="btn-slide" href="#" data-bs-toggle="modal" data-bs-target="#brochureModal">
+					<span class="circle"><i class="fa fa-file-pdf"></i></span>
+					<span class="title">Brochure</span>
+					<span class="title title-hover">Download Now</span>
+				  </a>
 				</li>
+			  </ul>
 			</div>
 		  </div>
 		</nav>
 	  </header>
-	  
-	  <style>
-		.nav-hover:hover {
-		  color: #20d34a !important;
-		}
-	  </style>
-	  
-	  <!-- Bootstrap JS -->
 	  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 	  
 	  
