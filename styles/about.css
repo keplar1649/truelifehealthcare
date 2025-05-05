@@ -1543,3 +1543,20 @@ input::placeholder {
   .dropdown-header {
 	color: #333;
   }
+
+  p {
+	text-align: justify; /* Justify the paragraph text */
+	font-size: 16px;
+	margin-bottom: 20px;
+}
+
+ol {
+	padding-left: 20px; /* Indent the list */
+}
+ol li {
+	margin-bottom: 10px; /* Space between list items */
+	font-size: 16px;
+}
+ol li strong {
+	color: #333; /* Darker color for emphasis */
+}
