@@ -1835,7 +1835,17 @@ input::placeholder {
 .carousel-caption {
     transition: opacity 0.5s ease-in-out;
 }
-  
+
+/* Header fix */
+  body {
+    padding-top: 120px; /* Adjust this based on your header height */
+  }
+
+  .dropdown-menu {
+    position: absolute;
+  }
+
+
 
 
  

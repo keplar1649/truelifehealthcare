@@ -1236,4 +1236,13 @@ input::placeholder {
   .dropdown-header {
 	color: #333;
   }
+
+  /* Header fix */
+  body {
+    padding-top: 120px; /* Adjust this based on your header height */
+  }
+
+  .dropdown-menu {
+    position: absolute;
+  }
   
