@@ -283,148 +283,291 @@
 		</div>
 
 		<!-- Departments -->
+		 <!-- Font Awesome CDN for icons -->
+			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-					<div class="departments">
-				<div class="departments_background parallax-window" data-parallax="scroll" data-speed="0.8" style="background-color: teal;"></div>
-					<h2 style="color:rgb(255, 255, 255); text-align: center;">TrueLife Healthcare - Your Trusted Partner in Wellness</h2>
-				<div class="container">
-					<div class="row departments_row row-md-eq-height">
+			<div class="care-process-section">
+			<h2 style="text-align: center; color: white; font-family: 'Lucida Sans'; padding: 20px;">
+				From First Call to Home Care — We’re With You Every Step
+			</h2>
 
-						<!-- Step 1 - Reach Out -->
-						<div class="col-lg-3 col-md-6 dept_col">
-							<div class="dept">
-								<div class="dept_image"><img src="images/dept_1.jpg" alt="Reach Out"></div>
-								<div class="dept_content text-center">
-									<div class="dept_title">Step 1: Reach Out</div>
-									<div class="dept_subtitle">Call us or send a message — we’re here to listen and understand your needs.</div>
-								</div>
-							</div>
-						</div>
+			<div class="steps-wrapper">
+				<!-- Step 1 -->
+				<div class="step">
+				<div class="step-number">1</div>
+				<div class="step-header">
+					<i class="fas fa-phone-volume"></i>
+					<h3 class="step-title">Reach Out</h3>
+				</div>
+				<p class="step-desc">Call us or send a message — we’re here to listen and understand your needs.</p>
+				</div>
 
-						<!-- Step 2 - In-Home Assessment -->
-						<div class="col-lg-3 col-md-6 dept_col">
-							<div class="dept">
-								<div class="dept_image"><img src="images/dept_2.jpg" alt="Assessment"></div>
-								<div class="dept_content text-center">
-									<div class="dept_title">Step 2: Free In-Home Assessment</div>
-									<div class="dept_subtitle">We’ll assess your medical condition, lifestyle, and preferences at home.</div>
-								</div>
-							</div>
-						</div>
+				<!-- Step 2 -->
+				<div class="step">
+				<div class="step-number step-blue">2</div>
+				<div class="step-header">
+					<i class="fas fa-house-medical"></i>
+					<h3 class="step-title">Free In-Home Assessment</h3>
+				</div>
+				<p class="step-desc">We’ll assess your medical condition, lifestyle, and preferences at home.</p>
+				</div>
 
-						<!-- Step 3 - Care Plan -->
-						<div class="col-lg-3 col-md-6 dept_col">
-							<div class="dept">
-								<div class="dept_image"><img src="images/dept_3.jpg" alt="Care Plan"></div>
-								<div class="dept_content text-center">
-									<div class="dept_title">Step 3: Personalized Care Plan</div>
-									<div class="dept_subtitle">Receive a customized care plan tailored to your health and comfort.</div>
-								</div>
-							</div>
-						</div>
+				<!-- Step 3 -->
+				<div class="step">
+				<div class="step-number">3</div>
+				<div class="step-header">
+					<i class="fas fa-clipboard-list"></i>
+					<h3 class="step-title">Personalized Care Plan</h3>
+				</div>
+				<p class="step-desc">Receive a customized care plan tailored to your health and comfort.</p>
+				</div>
 
-						<!-- Step 4 - Begin Care -->
-						<div class="col-lg-3 col-md-6 dept_col">
-							<div class="dept">
-								<div class="dept_image"><img src="images/Healthcare Services.jpg" alt="Begin Care"></div>
-								<div class="dept_content text-center">
-									<div class="dept_title">Step 4: Begin Care at Home</div>
-									<div class="dept_subtitle">Our certified caregivers begin care at your convenience, right in your home.</div>
-								</div>
-							</div>
-						</div>
-
-					</div>
+				<!-- Step 4 -->
+				<div class="step">
+				<div class="step-number step-blue">4</div>
+				<div class="step-header">
+					<i class="fas fa-user-nurse"></i>
+					<h3 class="step-title">Begin Care at Home</h3>
+				</div>
+				<p class="step-desc">Our certified caregivers begin care at your convenience, right in your home.</p>
 				</div>
 			</div>
+
+			<p class="process-note" style="color: white;">
+				This compassionate process ensures you feel supported, informed, and cared for — every step of the way.
+			</p>
+			</div>
+
+			<style>
+			.care-process-section {
+				background-color: teal;
+				padding: 40px 20px;
+				font-family: 'Segoe UI', sans-serif;
+			}
+
+			.steps-wrapper {
+				display: flex;
+				justify-content: space-around;
+				flex-wrap: wrap;
+				margin-top: 30px;
+				gap: 30px;
+			}
+
+			.step {
+				flex: 1 1 250px;
+				max-width: 300px;
+				background: white;
+				padding: 20px;
+				border-radius: 12px;
+				box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+				text-align: left;
+			}
+
+			.step-number {
+				background-color: #F18070;
+				color: white;
+				width: 40px;
+				height: 40px;
+				line-height: 40px;
+				border-radius: 50%;
+				font-size: 18px;
+				font-weight: bold;
+				text-align: center;
+				margin-bottom: 15px;
+			}
+
+			.step-blue {
+				background-color: #6c63ff;
+			}
+
+			.step-header {
+				display: flex;
+				align-items: center;
+				gap: 10px;
+				margin-bottom: 10px;
+				color: #333;
+			}
+
+			.step-header i {
+				font-size: 20px;
+				color: teal;
+			}
+
+			.step-title {
+				font-size: 18px;
+				margin: 0;
+			}
+
+			.step-desc {
+				font-size: 14px;
+				color: #555;
+				margin-top: 5px;
+			}
+
+			.process-note {
+				text-align: center;
+				margin-top: 40px;
+				color: #333;
+				font-size: 15px;
+				max-width: 600px;
+				margin-left: auto;
+				margin-right: auto;
+			}
+			</style>
 
 
 		<!-- Services -->
+		<style>
+		.services {
+		padding: 50px 0;
+		background-color: #f8f9fa;
+		}
+		.services h2 {
+		text-align: center;
+		color: teal;
+		margin-bottom: 40px;
+		}
+		.service_col {
+		margin-bottom: 30px;
+		}
+		.service {
+		background-color: teal;
+		border-radius: 8px;
+		padding: 30px 20px;
+		min-height: 420px;
+		transition: all 0.3s ease;
+		box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		}
+		.service:hover {
+		background-color: white;
+		}
+		.service_icon img {
+		width: 60px;
+		height: 60px;
+		margin-bottom: 15px;
+		transition: all 0.3s ease;
+		}
+		/* Text styling */
+		.service_title {
+		font-weight: 600;
+		font-size: 20px;
+		margin-bottom: 15px;
+		color: white;
+		transition: color 0.3s ease;
+		}
+		.service_text p {
+		font-size: 16px;
+		text-align: justify;
+		color: white;
+		transition: color 0.3s ease;
+		}
+		/* Hover color changes only text, not icon */
+		.service:hover .service_title,
+		.service:hover .service_text p {
+		color: black;
+		}
+		</style>
 
 		<div class="services">
-			<h2 style="color: teal; padding-left: 500px;">Our specialized Healthcare Services</h2>
-			<div class="container">
-				<div class="row services_row">
-					
-					<!-- Service: 24/7 Home Nursing -->
-					<div class="col-lg-4 col-md-6 service_col">
-						<a href="services.html">
-							<div class="service text-center trans_200">
-								<div class="service_icon"><img class="svg" src="images/24X7 nursing.png" alt="Home Nursing"></div>
-								<div class="service_title trans_200">24X7 Home Nursing</div>
-								<div class="service_text">
-									<p style="font-size: 15px; text-align: justify; font-size: 16px; margin-bottom: 20px;">TrueLife Healthcare offers round-the-clock nursing care at home, ensuring expert support for post-surgical recovery, chronic disease management, elderly care, and medication assistance—because your health deserves constant, compassionate attention.</p>
-								</div>
-							</div>
-						</a>
+		<h2 style=" font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Our Specialized Healthcare Services</h2>
+		<div class="container">
+			<div class="row">
+
+			<!-- Service 1 -->
+			<div class="col-lg-4 col-md-6 service_col">
+				<a href="services.html">
+				<div class="service text-center">
+					<div class="service_icon">
+					<img class="svg" src="images/24X7 nursing.png" alt="24X7 Home Nursing">
 					</div>
-		
-					<!-- Service: Elderly & Geriatric Care -->
-					<div class="col-lg-4 col-md-6 service_col">
-						<a href="services.html">
-							<div class="service text-center trans_200">
-								<div class="service_icon"><img class="svg" src="images/Doctor Consultation.png" alt="Elderly Care"></div>
-								<div class="service_title trans_200">Doctor's Consultation</div>
-								<div class="service_text">
-									<p style="font-size: 15px; text-align: justify; font-size: 16px; margin-bottom: 20px;">At TrueLife Healthcare, we provide DHA-licensed doctors deliver tailored medical care at home, from urgent visits to chronic disease management, across Dubai and UAE.</p>
-								</div>
-							</div>
-						</a>
-					</div>
-		
-					<!-- Service: Physiotherapy & Rehabilitation -->
-					<div class="col-lg-4 col-md-6 service_col">
-						<a href="services.html">
-							<div class="service text-center trans_200">
-								<div class="service_icon"><img class="svg" src="images/service_3.svg" alt="Physiotherapy"></div>
-								<div class="service_title trans_200">Physiotherapy</div>
-								<div class="service_text">
-									<p style="font-size: 15px; text-align: justify; font-size: 16px; margin-bottom: 20px;">TrueLife Healthcare provides personalized rehabilitation services to restore mobility, strength, and independence after injury, surgery, or illness. Our experts offer physiotherapy, pain management, and recovery support for a better quality of life.</p>
-								</div>
-							</div>
-						</a>
-					</div>
-		
-					<!-- Service: Palliative & Hospice Care -->
-					<div class="col-lg-4 col-md-6 service_col">
-						<a href="services.html">
-							<div class="service text-center trans_200">
-								<div class="service_icon"><img class="svg" src="images/service_4.svg" alt="Palliative Care"></div>
-								<div class="service_title trans_200">Speech Theraphy</div>
-								<div class="service_text">
-									<p style="font-size: 15px; text-align: justify; font-size: 16px; margin-bottom: 20px;">Truelife healthcare provides Personalized rehabilitation by licensed physiotherapists, helping you regain strength and mobility.</p>
-								</div>
-							</div>
-						</a>
-					</div>
-		
-					<!-- Service: Chronic Disease Management -->
-					<div class="col-lg-4 col-md-6 service_col">
-						<a href="services.html">
-							<div class="service text-center trans_200">
-								<div class="service_icon"><img class="svg" src="images/service_5.svg" alt="Chronic Care"></div>
-								<div class="service_title trans_200">Occupational Theraphy</div>
-								<div class="service_text">
-									<p style="font-size: 15px; text-align: justify; font-size: 16px; margin-bottom: 20px;">Empowering independence with customized therapy for all ages, addressing physical, neurological, and developmental challenges, right at your doorstep.</p>
-								</div>
-							</div>
-						</a>
-					</div>
-		
-					<!-- Service: Post-Surgical & Wound Care -->
-					<div class="col-lg-4 col-md-6 service_col">
-						<a href="services.html">
-							<div class="service text-center trans_200">
-								<div class="service_icon"><img class="svg" src="images/milestone_2.svg" alt="Post-Surgical Care"></div>
-								<div class="service_title trans_200">Specialized Care</div>
-								<div class="service_text">
-									<p style="font-size: 15px; text-align: justify; font-size: 16px; margin-bottom: 20px;">Tailored speech and language therapy by DHA-licensed experts, enhancing communication and swallowing skills for children and adults at home.</p>
-								</div>
-							</div>
-						</a>
+					<div class="service_title">24X7 Home Nursing</div>
+					<div class="service_text">
+					<p>TrueLife Healthcare offers round-the-clock nursing care at home, ensuring expert support for post-surgical recovery, chronic disease management, elderly care, and medication assistance—because your health deserves constant, compassionate attention.</p>
 					</div>
 				</div>
+				</a>
 			</div>
+
+			<!-- Service 2 -->
+			<div class="col-lg-4 col-md-6 service_col">
+				<a href="services.html">
+				<div class="service text-center">
+					<div class="service_icon">
+					<img class="svg" src="images/doctor-consultation.png" alt="Doctor's Consultation">
+					</div>
+					<div class="service_title">Doctor's Consultation</div>
+					<div class="service_text">
+					<p>At TrueLife Healthcare, DHA-licensed doctors deliver tailored medical care at home, from urgent visits to chronic disease management, across Dubai and UAE.</p>
+					</div>
+				</div>
+				</a>
+			</div>
+
+			<!-- Service 3 -->
+			<div class="col-lg-4 col-md-6 service_col">
+				<a href="services.html">
+				<div class="service text-center">
+					<div class="service_icon">
+					<img class="svg" src="images/Physiotherapy.png" alt="Physiotherapy">
+					</div>
+					<div class="service_title">Physiotherapy</div>
+					<div class="service_text">
+					<p>TrueLife Healthcare provides personalized rehabilitation services to restore mobility, strength, and independence after injury, surgery, or illness.</p>
+					</div>
+				</div>
+				</a>
+			</div>
+
+			<!-- Service 4 -->
+			<div class="col-lg-4 col-md-6 service_col">
+				<a href="services.html">
+				<div class="service text-center">
+					<div class="service_icon">
+					<img class="svg" src="images/speech-therapy.png" alt="Speech Therapy">
+					</div>
+					<div class="service_title">Speech Therapy</div>
+					<div class="service_text">
+					<p>Truelife Healthcare provides tailored speech and language therapy to enhance communication and swallowing skills for children and adults.</p>
+					</div>
+				</div>
+				</a>
+			</div>
+
+			<!-- Service 5 -->
+			<div class="col-lg-4 col-md-6 service_col">
+				<a href="services.html">
+				<div class="service text-center">
+					<div class="service_icon">
+					<img class="svg" src="images/Occupational Therapy.png" alt="Occupational Therapy">
+					</div>
+					<div class="service_title">Occupational Therapy</div>
+					<div class="service_text">
+					<p>Empowering independence with customized therapy for all ages, addressing physical, neurological, and developmental challenges, right at your doorstep.</p>
+					</div>
+				</div>
+				</a>
+			</div>
+
+			<!-- Service 6 -->
+			<div class="col-lg-4 col-md-6 service_col">
+				<a href="services.html">
+				<div class="service text-center">
+					<div class="service_icon">
+					<img class="svg" src="images/Specialized Care.png" alt="Specialized Care">
+					</div>
+					<div class="service_title">Specialized Care</div>
+					<div class="service_text">
+					<p>Tailored speech and language therapy by DHA-licensed experts, enhancing communication and swallowing skills at home for both children and adults.</p>
+					</div>
+				</div>
+				</a>
+			</div>
+
+			</div>
+		</div>
 		</div>
 
 		<!-- Brochure Download Modal -->
@@ -515,43 +658,145 @@
 		</div>
 
 		Footer -->
-		<footer class="footer pt-5">
-			<div class="container">
-				<div class="row g-4 justify-content-center text-center">
-					<!-- Company Info -->
-					<div class="col-lg-4 col-md-6 text-md-start text-center">
-						<h3 class="footer-title">Company Info</h3>
-						<p class="mb-4" style="color: white;">TrueLife Healthcare is committed to delivering compassionate, reliable, and personalized care that brings comfort and wellness to every home.</p>
-						<div class="social-links mb-4">
-							<a href="#"><i class="fab fa-facebook-f"></i></a>
-							<a href="#"><i class="fab fa-instagram"></i></a>
-							<a href="#"><i class="fab fa-linkedin-in"></i></a>
-						</div>
-					</div>
-		
-					<!-- Contact Us (Centered) -->
-					<div class="col-lg-4 col-md-6 text-center">
-						<h3 class="footer-title">Contact Us</h3>
-						<ul class="footer-links">
-							<li><i class="fas fa-map-marker-alt"></i><a href="https://www.google.com/maps/place/Al+Nasriya+Building+,Block+B,+OFFICE+104/@25.278492,55.384196,16z/data=!4m6!3m5!1s0x3e5f5c39c6555555:0xc72079c5fcb6c63a!8m2!3d25.2784924!4d55.3841961!16s%2Fg%2F11c2lk7r_1?entry=tts&g_ep=EgoyMDI1MDMxOS4yIPu8ASoASAFQAw%3D%3D&skid=c90837f8-f7d3-407b-9f5e-31409eb0d614">Office No. 314, 3rd Floor, Al Nasriya Building, Block B, Al Qusais, Dubai, UAE</a></li>
-							<li><i class="fas fa-envelope"></i> <a href="mailto:info@truelife.com">info@truelifehomehealth.ae</a></li>
-							<li><i class="fas fa-phone"></i> <a href="tel:+1234567890">+971 529469933</a></li>
-						</ul>
-					</div>
-		
-					<!-- Toll-Free Number
-					<div class="col-lg-4 col-md-6 text-md-end text-center">
-						<h3 class="footer-title">Toll-Free Number</h3>
-						<p class="toll-free-number" style="color: white;">1800</p>
-					</div>
-				</div>
-			</div>-->
-		
-			<!-- Footer Bottom -->
-			<div class="footer-bottom">
-				<p style="color: white;">&copy; 2025 Truelife Healthcare. All rights reserved.</p>
+		<div class="footer-wrapper pt-5">
+		<div class="container">
+			<div class="row g-4 justify-content-center text-center text-md-start">
+
+			<!-- Company Info -->
+			<div class="col-lg-4 col-md-6">
+				<h3 class="footer-title">Company Info</h3>
+				<p class="mb-4" style="font-size: 15px; text-align: justify; font-size: 16px; margin-bottom: 20px; color: white;">TrueLife Healthcare is dedicated to providing compassionate and personalized care in the comfort of your home — because your well-being is our priority.</p>
 			</div>
-		</footer>
+
+			<!-- Contact Info -->
+			<div class="col-lg-4 col-md-6">
+				<h3 class="footer-title">Contact Us</h3>
+				<ul class="footer-links">
+				<li><i class="fas fa-map-marker-alt"></i> <a href="https://www.google.com/maps/place/Al+Nasriya+Building+,Block+B,+OFFICE+104/"style="font-size: 15px; text-align: justify; font-size: 16px; margin-bottom: 20px;">Office No. 314, 3rd Floor, Al Nasriya Building, Al Qusais, Dubai, UAE</a></li>
+				<li><i class="fas fa-envelope"></i> <a href="mailto:info@truelifehomehealth.ae">info@truelifehomehealth.ae</a></li>
+				<li><i class="fas fa-phone"></i> <a href="tel:+971526769498">+971 526769498</a></li>
+				</ul><br>
+				<div class="social-links" style="padding-right:130px;">
+				<a href="#"><i class="fab fa-facebook-f"></i></a>
+				<a href="#"><i class="fab fa-instagram"></i></a>
+				<a href="#"><i class="fab fa-linkedin-in"></i></a>
+				</div>
+			</div>
+
+			<!-- Quick Links -->
+			<div class="col-lg-4 col-md-12">
+				<h3 class="footer-title">Quick Links</h3>
+				<ul class="footer-links">
+				<li><i class="fas fa-angle-right"></i> <a href="index.html">Home</a></li>
+				<li><i class="fas fa-angle-right"></i> <a href="services.html">Services</a></li>
+				<li><i class="fas fa-angle-right"></i> <a href="about.html">About Us</a></li>
+				<li><i class="fas fa-angle-right"></i> <a href="contact.html">Contact</a></li>
+				</ul>
+			</div>
+
+			</div>
+		</div>
+
+		<!-- Footer Bottom -->
+		<div class="footer-bottom mt-5">
+			<div class="container" style="padding-left: 420px;">
+			<p style="color: white;">&copy; 2025 TrueLife Healthcare. All rights reserved.</p>
+			</div>
+		</div>
+		</div>
+
+		<!-- Internal CSS -->
+		<style>
+		.footer-wrapper {
+			background: #333;
+			color: #ffffff;
+			position: relative;
+		}
+
+		.footer-title {
+			color: #fff;
+			font-size: 20px;
+			margin-bottom: 1.2rem;
+			position: relative;
+			font-weight: 600;
+		}
+
+		.footer-title::after {
+			content: '';
+			position: absolute;
+			left: 0;
+			bottom: -8px;
+			width: 40px;
+			height: 2px;
+			background: #F18070;
+		}
+
+		.footer-links {
+			list-style: none;
+			padding: 0;
+			margin: 0;
+		}
+
+		.footer-links li {
+			margin-bottom: 12px;
+			display: flex;
+			align-items: center;
+		}
+
+		.footer-links i {
+			color: #F18070;
+			margin-right: 10px;
+		}
+
+		.footer-links a {
+			color: #ffffff;
+			text-decoration: none;
+			transition: all 0.3s ease;
+		}
+
+		.footer-links a:hover {
+			color: #F18070;
+			padding-left: 5px;
+		}
+
+		.social-links {
+			display: flex;
+			gap: 12px;
+		}
+
+		.social-links a {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			width: 38px;
+			height: 38px;
+			border-radius: 50%;
+			background: rgba(255, 255, 255, 0.1);
+			color: white;
+			transition: 0.3s ease;
+		}
+
+		.social-links a:hover {
+			background: #ffffff;
+			color: teal;
+			transform: scale(1.1);
+		}
+
+		.footer-bottom {
+			background: #2c2c2c;
+			text-align: center;
+			padding: 15px 0;
+			font-size: 14px;
+			color: #ccc;
+			position: relative;
+			bottom: 0;
+			width: 100%;
+		}
+		</style>
+
+		<!-- Font Awesome -->
+		<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+
 		<script>
 						document.addEventListener("DOMContentLoaded", function () {
 				// Select all elements to animate
@@ -578,98 +823,6 @@
 				departments.forEach((dept) => observer.observe(dept));
 			});
 		</script>
-		
-		<style>
-			.footer {
-				background: #4a4a4a;
-				color: #ffffff;
-			}
-		
-			.footer-title {
-				color: #fff;
-				font-weight: 600;
-				margin-bottom: 1.5rem;
-				position: relative;
-			}
-		
-			.footer-title::after {
-				content: '';
-				position: absolute;
-				left: 50%;
-				transform: translateX(-50%);
-				bottom: -8px;
-				width: 30px;
-				height: 2px;
-				background: #F18070;
-			}
-		
-			.footer-links {
-				list-style: none;
-				padding: 0;
-				margin: 0;
-			}
-		
-			.footer-links li {
-				margin-bottom: 1rem;
-				display: flex;
-				align-items: center;
-				justify-content: center;
-			}
-		
-			.footer-links i {
-				margin-right: 8px;
-				color: #F18070;
-			}
-		
-			.footer-links a {
-				color: #ffffff;
-				text-decoration: none;
-				transition: all 0.3s ease;
-			}
-		
-			.footer-links a:hover {
-				color: #e0e0e0;
-				padding-left: 5px;
-			}
-		
-			.social-links {
-				display: flex;
-				justify-content: center;
-				gap: 10px;
-			}
-		
-			.social-links a {
-				display: inline-flex;
-				align-items: center;
-				justify-content: center;
-				width: 38px;
-				height: 38px;
-				border-radius: 50%;
-				background: rgba(255,255,255,0.2);
-				color: #ffffff;
-				transition: all 0.3s ease;
-			}
-		
-			.social-links a:hover {
-				background: #ffffff;
-				color: teal;
-				transform: translateY(-3px);
-			}
-		
-			.toll-free-number {
-				font-size: 28px;
-				font-weight: bold;
-				color: #F18070;
-			}
-		
-			.footer-bottom {
-				background: #4a4a4a;
-				color: white;
-				text-align: center;
-				padding: 10px 0;
-				font-size: 14px;
-			}
-		</style>
 	</div>
 </div>
 
