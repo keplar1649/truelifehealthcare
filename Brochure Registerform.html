@@ -26,6 +26,7 @@
             max-width: 600px;
             text-align: center;
             margin: 50px auto;
+            position: relative;
         }
 
         .form-group {
@@ -57,6 +58,21 @@
         }
 
         .btn:hover { background: #F18070; }
+
+        /* Close button */
+        .close-btn {
+            position: absolute;
+            top: 10px;
+            right: 15px;
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .close-btn:hover {
+            color: #f18070;
+        }
     </style>
 </head>
 <body>
@@ -88,73 +104,20 @@
                     
                     <!-- Services Dropdown -->
                     <li class="nav-item dropdown">
-                      <a class="nav-link dropdown-toggle text-dark fw-bold nav-hover" style="font-size: large;" href="services.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      <a class="nav-link dropdown-toggle text-dark fw-bold nav-hover" style="font-size: large;" href="#"
+                        role="button" data-bs-toggle="dropdown" aria-expanded="false" id="servicesDropdown">
                         Services
                       </a>
+
                       <ul class="dropdown-menu">
-                        <!-- Main headings -->
-                        <li class="dropdown-item"><a href="#" class="dropdown-toggle" style="color: black;">24/7 Nursing Care</a>
-                          <ul class="submenu">
-                            <li><a class="submenu-item" href="#">Daily Living Activities Assistance</a></li>
-                            <li><a class="submenu-item" href="#">Acute & Chronic Care</a></li>
-                            <li><a class="submenu-item" href="#">Elderly Care</a></li>
-                            <li><a class="submenu-item" href="#">Dementia Care</a></li>
-                            <li><a class="submenu-item" href="#">Wound Care</a></li>
-                            <li><a class="submenu-item" href="#">Post-Surgical Care</a></li>
-                            <li><a class="submenu-item" href="#">IV Therapy / Blood Collection</a></li>
-                            <li><a class="submenu-item" href="#">Enteral feeding</a></li>
-                            <li><a class="submenu-item" href="#">Tracheostomy Care</a></li>
-                            <li><a class="submenu-item" href="#">Catheter Care</a></li>
-                          </ul>
-                        </li>
-                        <li class="dropdown-item"><a href="#" class="dropdown-toggle" style="color: black;">Doctor Consultation</a>
-                          <ul class="submenu">
-                            <li><a class="submenu-item" href="#">Management of Chronic Medical Conditions</a></li>
-                            <li><a class="submenu-item" href="#">Dementia Care</a></li>
-                            <li><a class="submenu-item" href="#">Pain Management</a></li>
-                            <li><a class="submenu-item" href="#">IV & IM Medication Administration</a></li>
-                            <li><a class="submenu-item" href="#">Regular home visit as per patient <br> requirement</a></li>
-                          </ul>
-                        </li>
-                        <li class="dropdown-item"><a href="#" class="dropdown-toggle" style="color: black;">Physiotherapy</a>
-                          <ul class="submenu">
-                            <li><a class="submenu-item" href="#">Stroke Rehabilitation</a></li>
-                            <li><a class="submenu-item" href="#">Geriatric Rehabilitation</a></li>
-                            <li><a class="submenu-item" href="#">Post-Surgical Rehabilitation</a></li>
-                            <li><a class="submenu-item" href="#">Orthopedic Rehabilitation</a></li>
-                            <li><a class="submenu-item" href="#">Neuro-Muscular Rehabilitation</a></li>
-                            <li><a class="submenu-item" href="#">Pediatric Rehabilitation</a></li>
-                            <li><a class="submenu-item" href="#">Amputation Rehabilitation</a></li>
-                            <li><a class="submenu-item" href="#">Pain Management</a></li>
-                          </ul>
-                        </li>
-                        <li class="dropdown-item"><a href="#" class="dropdown-toggle" style="color: black;">Speech Therapy</a>
-                          <ul class="submenu">
-                            <li><a class="submenu-item" href="#">Adult & Pediatric</a></li>
-                            <li><a class="submenu-item" href="#">Cognitive Linguistic Function</a></li>
-                            <li><a class="submenu-item" href="#">Swallowing Training and Education</a></li>
-                            <li><a class="submenu-item" href="#">Speech Sound Production</a></li>
-                            <li><a class="submenu-item" href="#">Voice Therapy</a></li>
-                            <li><a class="submenu-item" href="#">Reading and Writing Training</a></li>
-                          </ul>
-                        </li>
-                        <li class="dropdown-item"><a href="#" class="dropdown-toggle" style="color: black;">Occupational Therapy</a>
-                          <ul class="submenu">
-                            <li><a class="submenu-item" href="#">Dyslexia</a></li>
-                            <li><a class="submenu-item" href="#">Autism</a></li>
-                            <li><a class="submenu-item" href="#">ADHD</a></li>
-                            <li><a class="submenu-item" href="#">Physical Disabilities</a></li>
-                            <li><a class="submenu-item" href="#">Neurological Disorders</a></li>
-                            <li><a class="submenu-item" href="#">Spinal Cord Injuries</a></li>
-                            <li><a class="submenu-item" href="#">Cerebral Palsy</a></li>
-                            <li><a class="submenu-item" href="#">Developmental Delays</a></li>
-                            <li><a class="submenu-item" href="#">Post-Amputation</a></li>
-                            <li><a class="submenu-item" href="#">Visual Impairment</a></li>
-                          </ul>
-                        </li>
+                        <li><a class="dropdown-item" href="nursing service.html" style="color: black;">24/7 Nursing Care</a></li>
+                        <li><a class="dropdown-item" href="doctor consultation.html" style="color: black;">Doctor Consultation</a></li>
+                        <li><a class="dropdown-item" href="Physiotherapy.html" style="color: black;">Physiotherapy</a></li>
+                        <li><a class="dropdown-item" href="Speech therapy.html" style="color: black;">Speech Therapy</a></li>
+                        <li><a class="dropdown-item" href="Occupational Therapy.html" style="color: black;">Occupational Therapy</a></li>
                       </ul>
                     </li>
-          
+
                     <li class="nav-item"><a class="nav-link text-dark fw-bold nav-hover" style="font-size: large;" href="contact.html">Contact Us</a></li>
                     <li class="nav-item">
                       <a class="btn-slide" href="#" data-bs-toggle="modal" data-bs-target="#brochureModal">
@@ -167,13 +130,14 @@
                 </div>
               </div>
             </nav>
-          </header>
-          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+        </header>
 
-        <div class="form-container">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+        <div class="form-container" id="brochureFormContainer">
+            <span class="close-btn" onclick="document.getElementById('brochureFormContainer').style.display='none';">&times;</span>
             <h2 style="color: white;">Download Our Brochure</h2>
             <form id="downloadForm" action="https://api.web3forms.com/submit" method="POST">
-                <!-- Web3Forms Access Key -->
                 <input type="hidden" name="access_key" value="46337ffe-331e-4b26-963e-932939aa0826">
             
                 <div class="form-group">
@@ -196,10 +160,10 @@
             
             <script>
                 document.getElementById("downloadForm").addEventListener("submit", function(event) {
-                    event.preventDefault(); // Prevent default form submission
-            
+                    event.preventDefault();
+
                     let formData = new FormData(this);
-            
+
                     fetch("https://api.web3forms.com/submit", {
                         method: "POST",
                         body: formData
@@ -208,7 +172,7 @@
                     .then(data => {
                         if (data.success) {
                             alert("Thank you! Your brochure is now downloading.");
-                            window.location.href = "Document/TL Updated Brochure.pdf"; // Change to your actual PDF path
+                            window.location.href = "Document/TL Updated Brochure.pdf";
                         } else {
                             alert("Form submission failed. Please try again.");
                         }
@@ -221,27 +185,5 @@
             </script>
         </div>
     </div>
-
-    <script>
-        function validateForm() {
-            let name = document.getElementById("name").value.trim();
-            let email = document.getElementById("email").value.trim();
-            let phone = document.getElementById("phone").value.trim();
-            
-            if (name === "" || email === "" || phone === "") {
-                alert("Please fill in all fields before downloading the brochure.");
-                return;
-            }
-            if (!email.includes("@")) {
-                alert("Please enter a valid email address.");
-                return;
-            }
-
-            alert("Thank you! Your brochure is downloading...");
-            window.location.href = "Document/TrueLife brochure.pdf"; // Replace with the actual path
-        }
-    </script>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
