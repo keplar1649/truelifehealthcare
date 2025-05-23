@@ -201,6 +201,55 @@
             <p style="color: #333;font-size: 15px; text-align: justify; font-size: 16px; margin-bottom: 20px;">Reading and writing training enhances literacy skills through structured, personalized exercises, supporting individuals with learning difficulties or those recovering from neurological conditions to regain effective communication and academic abilities.</p>
           </div>
         </div>
+
+		<!-- WhatsApp Floating Button with Tooltip -->
+			<a href="https://wa.me/971589477102?text=Hi%20there!%20I%27m%20interested%20in%20your%20services." 
+			class="whatsapp-float" target="_blank">
+				<span class="tooltip-text">Chat with us</span>
+				<img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" alt="Chat on WhatsApp">
+			</a>
+
+			<!-- Add this to your CSS -->
+			<style>
+			.whatsapp-float {
+				position: fixed;
+				bottom: 20px;
+				right: 20px;
+				z-index: 999;
+				cursor: pointer;
+				text-decoration: none;
+				display: flex;
+				align-items: center;
+			}
+
+			.whatsapp-float .tooltip-text {
+				visibility: hidden;
+				background-color: teal;
+				color: #fff;
+				text-align: center;
+				border-radius: 6px;
+				padding: 5px 10px;
+				position: absolute;
+				bottom: 60px;
+				right: 0;
+				white-space: nowrap;
+				font-size: 14px;
+				z-index: 1000;
+				opacity: 0;
+				transition: opacity 0.3s;
+			}
+
+			.whatsapp-float:hover .tooltip-text {
+				visibility: visible;
+				opacity: 1;
+			}
+
+			.whatsapp-float img {
+				width: 48px;
+				height: 48px;
+			}
+			</style>
+
       
       
 		<!-- Brochure Download Modal -->
@@ -212,7 +261,7 @@
 
 					<!-- Visible "X" Close Button -->
 					<button type="button" data-bs-dismiss="modal" aria-label="Close"
-						style="position: absolute; top: 10px; right: 15px; font-size: 1.5rem; border: none; background: transparent; color: #000; z-index: 1055;">
+						style="position: absolute; top: 10px; right: 15px; font-size: 1.5rem; border: none; background: transparent; color: white; z-index: 1055;">
 						&times;
 					</button>
 
