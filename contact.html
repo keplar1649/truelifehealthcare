@@ -154,167 +154,287 @@
 		</div>
 	</div>-->
 
-	<style>
-			.contact-box {
-				border: 2px solid teal;
-				border-radius: 10px;
-				padding: 20px;
-				text-align: center;
-				box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-				transition: all 0.3s ease-in-out;
-				background: teal;
-				color: white;
-				height: 100%; /* Stretch to full height of parent */
+	<!-- WhatsApp Floating Button with Tooltip -->
+			<a href="https://wa.me/971589477102?text=Hi%20there!%20I%27m%20interested%20in%20your%20services." 
+			class="whatsapp-float" target="_blank">
+				<span class="tooltip-text">Chat with us</span>
+				<img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" alt="Chat on WhatsApp">
+			</a>
+
+			<!-- Add this to your CSS -->
+			<style>
+			.whatsapp-float {
+				position: fixed;
+				bottom: 20px;
+				right: 20px;
+				z-index: 999;
+				cursor: pointer;
+				text-decoration: none;
 				display: flex;
-				flex-direction: column;
-				justify-content: center; /* Vertically center content */
+				align-items: center;
 			}
 
-	
-		.contact-box:hover {
-			transform: scale(1.05); /* Slight zoom on hover */
-			box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
-		}
-	
-		.contact-box i {
-			color: white; /* Icon color */
-			margin-bottom: 10px; /* Space below icon */
-		}
-	
-		.contact-box p {
-			margin: 0; /* Remove default margins */
+			.whatsapp-float .tooltip-text {
+				visibility: hidden;
+				background-color: teal;
+				color: #fff;
+				text-align: center;
+				border-radius: 6px;
+				padding: 5px 10px;
+				position: absolute;
+				bottom: 60px;
+				right: 0;
+				white-space: nowrap;
+				font-size: 14px;
+				z-index: 1000;
+				opacity: 0;
+				transition: opacity 0.3s;
+			}
+
+			.whatsapp-float:hover .tooltip-text {
+				visibility: visible;
+				opacity: 1;
+			}
+
+			.whatsapp-float img {
+				width: 48px;
+				height: 48px;
+			}
+			</style>
+
+	<!--3-BOXES-->
+			<div>
+				<style>
+					.contact-section {
+					background-color: #f8f9fa;
+					padding: 40px 20px;
+					text-align: center;
+					}
+
+					.contact-section h2 {
+					color: teal;
+					font-size: 28px;
+					margin-bottom: 30px;
+					font-weight: bold;
+					}
+
+					.contact-container {
+					display: flex;
+					justify-content: center;
+					gap: 30px;
+					flex-wrap: wrap;
+					}
+
+					.contact-card {
+					background-color: teal;
+					color: white;
+					width: 360px;
+					border-radius: 12px;
+					padding: 30px 25px;
+					text-align: center;
+					box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+					transition: transform 0.2s ease;
+					display: flex;
+					flex-direction: column;
+					align-items: center;
+					}
+
+					.contact-card i {
+					font-size: 40px;
+					margin-bottom: 15px;
+					color: white;
+					}
+
+					.contact-card h3 {
+					margin: 10px 0 5px;
+					font-size: 22px;
+					color: white;
+					}
+
+					.contact-card p {
+					margin: 5px 0;
+					font-weight: bold;
+					text-align: center;
+					color: white;
+					}
+				</style>
+
+				<div class="contact-section">
+					<h2>Contact Us</h2>
+
+					<div class="contact-container">
+					<div class="contact-card">
+						<i class="fas fa-phone"></i>
+						<h3>Phone</h3>
+						<p>+9714-5726692</p>
+						<p>+971-589477102</p>
+					</div>
+
+					<div class="contact-card">
+						<i class="fas fa-envelope"></i>
+						<h3>Email</h3>
+						<p>info@truelifehomehealth.ae</p>
+					</div>
+
+					<div class="contact-card">
+						<i class="fas fa-map-marker-alt"></i>
+						<h3>Location</h3>
+						<p>Office No. 314, 3rd Floor</p>
+						<p>Al Nasriya Building Block B,</p>
+						<p>Al Qusais, Dubai, UAE</p>
+					</div>
+					</div>
+				</div>
+
+				<!-- Font Awesome CDN for icons -->
+				<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+				</div>
+
+		<!--CONTACT FORM-->
+				<div class="contact">
+		<style>
+			.contact {
+			padding: 60px 80px;
+			font-family: 'Roboto', sans-serif;
+			background-color: #fff;
+			}
+
+			.container {
+			display: flex;
+			justify-content: space-between;
+			flex-wrap: wrap;
+			gap: 40px;
+			}
+
+			.section_title h2 {
+			font-size: 28px;
+			font-weight: bold;
+			color: #008080;
+			margin-bottom: 20px;
+			}
+
+			.contact_text p {
 			font-size: 16px;
-			color: #ffffff;
-		}
-	
-		.contact-box strong {
-			color: #ffffff; /* Bold text color */
-		}
-	</style>
-	
-	<div class="row" style="padding-top: 200px;">
-		<!-- Phone Box -->
-		<div class="col-lg-4 col-md-6">
-			<div class="contact-box">
-				<i class="fas fa-phone-alt fa-4x"></i> <!-- Phone Icon -->
-				<h4 style="color: white;">Phone</h4>
-				<p><strong>+9714-5726692</strong></p><br>
-				<p><strong>+971-589477102</strong></p><br>
-			</div>
-		</div>
-	
-		<!-- Email Box -->
-		<div class="col-lg-4 col-md-6">
-			<div class="contact-box">
-				<i class="fas fa-envelope fa-4x"></i> <!-- Email Icon -->
-				<h4 style="color: white;">Email</h4>
-				<p><strong>info@truelifehomehealth.ae</strong></p><br>
-			</div>
-		</div>
-	
-		<!-- Location Box -->
-		<div class="col-lg-4 col-md-6">
-			<div class="contact-box">
-				<i class="fas fa-map-marker-alt fa-4x"></i> <!-- Location Icon -->
-				<h4 style="color: white;">Location</h4>
-				<p><strong>Office No. 314, 3rd Floor
-					Al Nasriya Building Block B, Al Qusais, Dubai, UAE</strong></p>
-			</div>
-		</div>
-	</div><br>
-	
-	
-	
+			color: #333;
+			line-height: 1.6;
+			}
 
-	<!-- Contact -->
+			.form_col {
+			flex: 1;
+			min-width: 300px;
+			}
 
-	<div class="contact">
+			.contact_form {
+			display: flex;
+			flex-direction: column;
+			gap: 15px;
+			}
+
+			.contact_input {
+			width: 100%;
+			padding: 12px 15px;
+			background-color: #e4e4e4b6;
+			color: #000000;
+			border: none;
+			border-radius: 4px;
+			font-size: 16px;
+			}
+
+			.contact_input::placeholder {
+			color: #1f1e1e;
+			}
+
+			.contact_text_area {
+			height: 120px;
+			resize: vertical;
+			}
+
+			.row {
+			display: flex;
+			gap: 15px;
+			flex-wrap: wrap;
+			}
+
+			.col-md-6 {
+			flex: 1;
+			min-width: 48%;
+			}
+
+
+			#error_message {
+			color: red;
+			display: none;
+			}
+
+			.google_map iframe {
+			width: 100%;
+			height: 400px;
+			border: 0;
+			}
+		</style>
+
 		<div class="container">
-		  <div class="row">
-	  
-			<!-- Contact Info -->
 			<div class="col-lg-6">
-			  <div class="section_title"><h2>Book Online</h2></div>
-			  <div class="contact_text">
-				<p>At Truelife Home Healthcare, we are dedicated to providing compassionate and professional home healthcare services tailored to your needs. Whether you have questions about our services, need assistance for a loved one, or wish to schedule a consultation, we’re here to help.</p>
-			  </div>
+			<div class="section_title"><h2>Book Online</h2></div>
+			<div class="contact_text">
+				<p>
+				At Truelife Home Healthcare, we are dedicated to providing compassionate and professional home healthcare services tailored to your needs. Whether you have questions about our services, need assistance for a loved one, or wish to schedule a consultation, we’re here to help.
+				</p>
 			</div>
-	  
-			<!-- Contact Form -->
+			</div>
+
 			<div class="col-lg-6 form_col">
-			<div class="contact_form_container">
-				<form id="contact_form" class="contact_form" onsubmit="return validateForm()">
-				<!-- Web3Forms Access Key -->
-				<input type="hidden" name="access_key" value="46337ffe-331e-4b26-963e-932939aa0826">
+				<div class="contact_form_container">
+					<form id="contact_form" class="contact_form" onsubmit="return validateForm()">
+					<input type="hidden" name="access_key" value="46337ffe-331e-4b26-963e-932939aa0826">
+					<input type="checkbox" name="botcheck" style="display: none;">
 
-				<!-- Honeypot Spam Protection -->
-				<input type="checkbox" name="botcheck" class="hidden" style="display: none;">
-
-				<div class="row">
-					<div class="col-md-6 input_col">
-					<div class="input_container input_name">
+					<div class="row">
+						<div class="col-md-6 input_col">
 						<input type="text" name="name" class="contact_input" placeholder="Name" required>
-					</div>
-					</div>
-					<div class="col-md-6 input_col">
-					<div class="input_container">
+						</div>
+						<div class="col-md-6 input_col">
 						<input type="email" name="email" class="contact_input" placeholder="E-mail" required>
-					</div>
-					</div>
-				</div>
-
-				<div class="input_container">
-					<input type="number" name="subject" class="contact_input" placeholder="Phone Number" required>
-				</div>
-
-				<div class="input_container">
-					<input type="text" name="service" class="contact_input" placeholder="Type of Service" required>
-				</div>
-
-				<div class="input_container">
-					<textarea name="message" class="contact_input contact_text_area" placeholder="Address" required></textarea>
-				</div>
-
-				<!-- Error Message -->
-				<div id="error_message" style="color: red; display: none;">Please fill in all the fields.</div>
-
-				<!-- Styled Submit Button -->
-				<div class="button text_section_button">
-					<a href="#" onclick="submitForm(); return false;">Send</a>
-				</div>
-				</form>
-			</div>
-			</div>
-
-
-	  <!--MAP-->
-	  <div class="row map_row">
-		<div class="col">
-			<!-- Contact Map -->
-			<div class="contact_map">
-				<!-- Google Map -->
-				<div class="map">
-					<div id="google_map" class="google_map">
-						<div class="map_container">
-							<iframe 
-								src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3607.7647723582395!2d55.3816211748401!3d25.278497228403943!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f5c39c6555555%3A0xc72079c5fcb6c63a!2sAl%20Nasriya%20Building%20%2CBlock%20B%2C%20OFFICE%20104!5e0!3m2!1sen!2sin!4v1742664962626!5m2!1sen!2sin" 
-								width="1300" 
-								height="400" 
-								style="border:0;" 
-								allowfullscreen="" 
-								loading="lazy" 
-								referrerpolicy="no-referrer-when-downgrade">
-							</iframe>
 						</div>
 					</div>
+
+					<input type="number" name="subject" class="contact_input" placeholder="Phone Number" required>
+					<input type="text" name="service" class="contact_input" placeholder="Type of Service" required>
+					<textarea name="message" class="contact_input contact_text_area" placeholder="Address" required></textarea>
+
+					<div id="error_message">Please fill in all the fields.</div>
+					<div class="button text_section_button" style="width: 120px; background-color: teal;">
+					    <a href="#" onclick="submitForm(); return false;">Send</a>
+				    </div>
+
+					</form>
 				</div>
 			</div>
 		</div>
+
+		<!-- Google Map Section -->
+		<div class="map_row" style="margin-top: 60px;">
+			<div class="col">
+			<div class="contact_map">
+				<div class="map">
+				<div id="google_map" class="google_map">
+					<div class="map_container">
+					<iframe 
+						src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3607.7647723582395!2d55.3816211748401!3d25.278497228403943!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f5c39c6555555%3A0xc72079c5fcb6c63a!2sAl%20Nasriya%20Building%20%2CBlock%20B%2C%20OFFICE%20104!5e0!3m2!1sen!2sin!4v1742664962626!5m2!1sen!2sin"
+						allowfullscreen=""
+						loading="lazy"
+						referrerpolicy="no-referrer-when-downgrade">
+					</iframe>
+					</div>
+				</div>
+				</div>
+			</div>
+			</div>
 		</div>
-	  
-	  <!-- JavaScript to handle form submission without redirect -->
-	  <script>
-		function validateForm() {
+
+		<!-- JavaScript for Form Submission -->
+		<script>
+			function validateForm() {
 			const form = document.forms["contact_form"];
 			const name = form["name"].value.trim();
 			const email = form["email"].value.trim();
@@ -324,40 +444,41 @@
 			const errorMessage = document.getElementById('error_message');
 
 			if (!name || !email || !subject || !service || !message) {
-			errorMessage.style.display = "block";
-			return false;
+				errorMessage.style.display = "block";
+				return false;
 			} else {
-			errorMessage.style.display = "none";
-			return true;
+				errorMessage.style.display = "none";
+				return true;
 			}
-		}
+			}
 
-		function submitForm() {
+			function submitForm() {
 			if (validateForm()) {
-			const form = document.getElementById('contact_form');
-			const formData = new FormData(form);
+				const form = document.getElementById('contact_form');
+				const formData = new FormData(form);
 
-			fetch('https://api.web3forms.com/submit', {
+				fetch('https://api.web3forms.com/submit', {
 				method: 'POST',
 				body: formData
-			})
-			.then(response => {
+				})
+				.then(response => {
 				if (response.ok) {
-				alert("Message sent! Our team will get back to you. Thank you!");
-				form.reset();
+					alert("Message sent! Our team will get back to you. Thank you!");
+					form.reset();
 				} else {
-				alert("Failed to send. Please try again.");
+					alert("Failed to send. Please try again.");
 				}
-			})
-			.catch(error => {
+				})
+				.catch(error => {
 				alert("Something went wrong!");
 				console.error(error);
-			});
+				});
 			}
-		}
+			}
 		</script>
+		</div>
 
-	<!-- Brochure Download Modal -->
+<!-- Brochure Download Modal -->
 		
 	<div class="modal fade" id="brochureModal" tabindex="-1" aria-labelledby="brochureModalLabel" aria-hidden="true">
 		<div class="modal-dialog modal-dialog-centered">
@@ -434,183 +555,228 @@
 		});
 	</script>
 
-
-	<!-- Footer -->
 	<!-- Footer Section -->
-			<div class="footer-wrapper pt-5 pb-4" style="width: 100%; height: 100%;">
-			<div class="container">
-				<div class="row g-5 justify-content-center text-center text-md-start">
+<div class="footer-wrapper pt-5 pb-4" style="width: 100%; height: 100%;">
+  <div class="container">
+    <div class="row g-5 justify-content-center text-center text-md-start">
+      <!-- Company Info -->
+      <div class="col-lg-4 col-md-4 col-sm-12">
+        <h3 class="footer-title">Company Info</h3>
+        <p class="footer-description" style="color: white;">
+          Truelife Healthcare is dedicated to providing compassionate and personalized care in the comfort of your home — because your well-being is our priority.
+        </p>
+      </div>
 
-				<!-- Company Info -->
-				<div class="col-lg-4 col-md-6">
-					<h3 class="footer-title">Company Info</h3>
-					<p class="footer-description">
-					TrueLife Healthcare is dedicated to providing compassionate and personalized care in the comfort of your home — because your well-being is our priority.
-					</p>
-				</div>
+      <!-- Contact Us -->
+      <div class="col-lg-4 col-md-4 col-sm-12">
+        <h3 class="footer-title">Contact Us</h3>
+        <ul class="footer-links">
+          <li>
+            <i class="fas fa-map-marker-alt"></i>
+            <a href="https://www.google.com/maps/place/Al+Nasriya+Building+,Block+B,+OFFICE+104/" style="color: white;">Office No. 314, 3rd Floor, Al Nasriya Building, Al Qusais, Dubai, UAE</a>
+          </li>
+          <li>
+            <i class="fas fa-envelope"></i>
+            <a href="mailto:info@truelifehomehealth.ae" style="color: white;">info@truelifehomehealth.ae</a>
+          </li>
+          <li>
+            <i class="fas fa-phone"></i>
+            <a href="tel:+97145276692" style="color: white;">+9714-5726692</a>
+          </li>
+          <li>
+            <i class="fas fa-phone"></i>
+            <a href="tel:+971589477102" style="color: white;">+971-589477102</a>
+          </li>
+        </ul>
+        <!-- Social Links -->
+        <div class="social-links mt-3 justify-content-md-start justify-content-center">
+          <a href="#"><i class="fab fa-facebook-f" style="color: white;"></i></a>
+          <a href="#"><i class="fab fa-instagram" style="color: white;"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in" style="color: white;"></i></a>
+        </div>
+      </div>
 
-				<!-- Contact Info -->
-				<div class="col-lg-4 col-md-6">
-					<h3 class="footer-title">Contact Us</h3>
-					<ul class="footer-links">
-					<li><i class="fas fa-map-marker-alt"></i><a href="https://www.google.com/maps/place/Al+Nasriya+Building+,Block+B,+OFFICE+104/">Office No. 314, 3rd Floor, Al Nasriya Building, Al Qusais, Dubai, UAE</a></li>
-					<li><i class="fas fa-envelope"></i><a href="mailto:info@truelifehomehealth.ae">info@truelifehomehealth.ae</a></li>
-					<li><i class="fas fa-phone"></i><a href="tel:+97145276692">+9714-5726692</a></li>
-					<li><i class="fas fa-phone"></i><a href="tel:+971589477102">+971-589477102</a></li>
-					</ul>
+      <!-- Quick Links -->
+      <div class="col-lg-4 col-md-4 col-sm-12">
+        <h3 class="footer-title">Quick Links</h3>
+        <ul class="footer-links">
+          <li><i class="fas fa-angle-double-right"></i><a href="index.html" style="color: white;">Home</a></li>
+          <li><i class="fas fa-angle-double-right"></i><a href="services.html" style="color: white;">Services</a></li>
+          <li><i class="fas fa-angle-double-right"></i><a href="about.html" style="color: white;">About Us</a></li>
+          <li><i class="fas fa-angle-double-right"></i><a href="contact.html" style="color: white;">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
 
-					<!-- Social Links -->
-					<div class="social-links mt-3 justify-content-md-start justify-content-center">
-					<a href="#"><i class="fab fa-facebook-f"></i></a>
-					<a href="#"><i class="fab fa-instagram"></i></a>
-					<a href="#"><i class="fab fa-linkedin-in"></i></a>
-					</div>
-				</div>
+  <!-- Footer Bottom -->
+  <div class="footer-bottom mt-5 py-3">
+    <div class="container text-center">
+      <p class="mb-0">© 2025 TrueLife Healthcare. All rights reserved.</p>
+    </div>
+  </div>
 
-				<!-- Quick Links -->
-				<div class="col-lg-4 col-md-12">
-					<h3 class="footer-title">Quick Links</h3>
-					<ul class="footer-links">
-					<li><i class="fas fa-angle-right"></i><a href="index.html">Home</a></li>
-					<li><i class="fas fa-angle-right"></i><a href="services.html">Services</a></li>
-					<li><i class="fas fa-angle-right"></i><a href="about.html">About Us</a></li>
-					<li><i class="fas fa-angle-right"></i><a href="contact.html">Contact</a></li>
-					</ul>
-				</div>
+  <!-- Internal CSS -->
+  <style>
+    .footer-wrapper {
+      background: #2e2e2e;
+      color: #ffffff;
+      padding-top: 60px;
+      padding-bottom: 40px;
+    }
 
-				</div>
-			</div>
+    .footer-title {
+      color: #fff;
+      font-size: 20px;
+      margin-bottom: 1.5rem;
+      font-weight: 600;
+      position: relative;
+    }
 
-			<!-- Footer Bottom -->
-			<div class="footer-bottom mt-5 py-3">
-				<div class="container text-center">
-				<p class="mb-0">&copy; 2025 TrueLife Healthcare. All rights reserved.</p>
-				</div>
-			</div>
+    .footer-title::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: -8px;
+      width: 40px;
+      height: 2px;
+      background: #F18070;
+    }
 
-			<!-- Internal CSS -->
-			<style>
-				.footer-wrapper {
-				background: #333;
-				color: #ffffff;
-				}
+    .footer-description {
+      font-size: 16px;
+      color: #cccccc;
+      text-align: justify;
+      line-height: 1.8;
+    }
 
-				.footer-title {
-				color: #fff;
-				font-size: 20px;
-				margin-bottom: 1.2rem;
-				font-weight: 600;
-				position: relative;
-				}
+    .footer-description span {
+      font-weight: bold;
+    }
 
-				.footer-title::after {
-				content: '';
-				position: absolute;
-				left: 0;
-				bottom: -8px;
-				width: 40px;
-				height: 2px;
-				background: #F18070;
-				}
+    .footer-links {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
 
-				.footer-description {
-				font-size: 16px;
-				color: #ffffff;
-				text-align: justify;
-				}
+    .footer-links li {
+      margin-bottom: 15px;
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+    }
 
-				.footer-links {
-				list-style: none;
-				padding: 0;
-				margin: 0;
-				}
+    .footer-links i {
+      color: #F18070;
+      margin-top: 4px;
+      font-size: 16px;
+    }
 
-				.footer-links li {
-				margin-bottom: 12px;
-				display: flex;
-				align-items: start;
-				gap: 10px;
-				}
+    .footer-links a {
+      color: #cccccc;
+      text-decoration: none;
+      font-size: 16px;
+      transition: all 0.3s ease;
+    }
 
-				.footer-links i {
-				color: #F18070;
-				margin-top: 3px;
-				}
+    .footer-links a:hover {
+      color: #F18070;
+      padding-left: 5px;
+    }
 
-				.footer-links a {
-				color: #ffffff;
-				text-decoration: none;
-				font-size: 16px;
-				transition: all 0.3s ease;
-				}
+    .social-links {
+      display: flex;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
 
-				.footer-links a:hover {
-				color: #F18070;
-				padding-left: 5px;
-				}
+    .social-links a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      background: #444444;
+      color: #cccccc;
+      transition: 0.3s ease;
+      font-size: 18px;
+    }
 
-				.social-links {
-				display: flex;
-				gap: 12px;
-				flex-wrap: wrap;
-				}
+    .social-links a:hover {
+      background: #F18070;
+      color: #ffffff;
+      transform: scale(1.1);
+    }
 
-				.social-links a {
-				display: flex;
-				align-items: center;
-				justify-content: center;
-				width: 38px;
-				height: 38px;
-				border-radius: 50%;
-				background: rgba(255, 255, 255, 0.1);
-				color: white;
-				transition: 0.3s ease;
-				}
+    .footer-bottom {
+      background: #1f1f1f;
+      color: #888888;
+      font-size: 14px;
+      padding: 15px 0;
+    }
 
-				.social-links a:hover {
-				background: #ffffff;
-				color: teal;
-				transform: scale(1.1);
-				}
+    /* Ensure all sections are in one row */
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      margin-right: -15px;
+      margin-left: -15px;
+    }
 
-				.footer-bottom {
-				background: #2c2c2c;
-				color: #ccc;
-				font-size: 14px;
-				}
+    .col-lg-4 {
+      flex: 0 0 33.333333%;
+      max-width: 33.333333%;
+      padding-right: 15px;
+      padding-left: 15px;
+      box-sizing: border-box;
+    }
 
-				/* Mobile Responsiveness */
-				@media (max-width: 768px) {
-				.footer-wrapper {
-					text-align: center;
-				}
+    /* Force the row to stay in one line on larger screens */
+    @media (min-width: 992px) {
+      .row {
+        flex-wrap: nowrap !important;
+      }
+    }
 
-				.footer-links li {
-					justify-content: center;
-				}
+    /* Responsive adjustments */
+    @media (max-width: 991px) {
+      .col-lg-4 {
+        flex: 0 0 50%;
+        max-width: 50%;
+      }
+    }
 
-				.footer-title::after {
-					left: 50%;
-					transform: translateX(-50%);
-				}
+    @media (max-width: 768px) {
+      .footer-wrapper {
+        text-align: center;
+      }
 
-				.social-links {
-					justify-content: center;
-				}
-				}
-			</style>
-			</div>
-		<!-- Font Awesome -->
-		<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-	
+      .col-lg-4 {
+        flex: 0 0 100%;
+        max-width: 100%;
+      }
+
+      .footer-links li {
+        justify-content: center;
+      }
+
+      .footer-title::after {
+        left: 50%;
+        transform: translateX(-50%);
+      }
+
+      .social-links {
+        justify-content: center;
+      }
+
+      .footer-description {
+        text-align: center;
+      }
+    }
+  </style>
 </div>
 
-<script src="js/jquery-3.2.1.min.js"></script>
-<script src="styles/bootstrap4/popper.js"></script>
-<script src="styles/bootstrap4/bootstrap.min.js"></script>
-<script src="plugins/easing/easing.js"></script>
-<script src="plugins/parallax-js-master/parallax.min.js"></script>
-<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&key=AIzaSyCIwF204lFZg1y4kPSIhKaHEXMLYxxuMhA"></script>
-<script src="js/contact.js"></script>
-</body>
-</html>
+<!-- Font Awesome -->
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
