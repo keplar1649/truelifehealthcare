@@ -291,87 +291,127 @@
 				</div>
 
 		<!--CONTACT FORM-->
-				<div class="contact">
+		<div class="contact">
 		<style>
 			.contact {
-			padding: 60px 80px;
-			font-family: 'Roboto', sans-serif;
-			background-color: #fff;
+				padding: 60px 20px;
+				font-family: 'Roboto', sans-serif;
+				background-color: #fff;
 			}
 
 			.container {
-			display: flex;
-			justify-content: space-between;
-			flex-wrap: wrap;
-			gap: 40px;
+				display: flex;
+				justify-content: space-between;
+				flex-wrap: wrap;
+				gap: 40px;
 			}
 
 			.section_title h2 {
-			font-size: 28px;
-			font-weight: bold;
-			color: #008080;
-			margin-bottom: 20px;
+				font-size: 28px;
+				font-weight: bold;
+				color: #008080;
+				margin-bottom: 20px;
 			}
 
 			.contact_text p {
-			font-size: 16px;
-			color: #333;
-			line-height: 1.6;
+				font-size: 16px;
+				color: #333;
+				line-height: 1.6;
+				text-align: justify;
 			}
 
 			.form_col {
-			flex: 1;
-			min-width: 300px;
+				flex: 1;
+				min-width: 300px;
 			}
 
 			.contact_form {
-			display: flex;
-			flex-direction: column;
-			gap: 15px;
+				display: flex;
+				flex-direction: column;
+				gap: 15px;
 			}
 
 			.contact_input {
-			width: 100%;
-			padding: 12px 15px;
-			background-color: #e4e4e4b6;
-			color: #000000;
-			border: none;
-			border-radius: 4px;
-			font-size: 16px;
+				width: 100%;
+				padding: 12px 15px;
+				background-color: #e4e4e4b6;
+				color: #000000;
+				border: none;
+				border-radius: 4px;
+				font-size: 16px;
 			}
 
 			.contact_input::placeholder {
-			color: #1f1e1e;
+				color: #1f1e1e;
 			}
 
 			.contact_text_area {
-			height: 120px;
-			resize: vertical;
+				height: 120px;
+				resize: vertical;
 			}
 
 			.row {
-			display: flex;
-			gap: 15px;
-			flex-wrap: wrap;
+				display: flex;
+				gap: 15px;
+				flex-wrap: wrap;
 			}
 
 			.col-md-6 {
-			flex: 1;
-			min-width: 48%;
+				flex: 1;
+				min-width: 48%;
 			}
 
-
 			#error_message {
-			color: red;
-			display: none;
+				color: red;
+				display: none;
 			}
 
 			.google_map iframe {
-			width: 100%;
-			height: 400px;
-			border: 0;
+				width: 100%;
+				height: 400px;
+				border: 0;
 			}
-		</style>
+
+			/* Responsive adjustments */
+			@media (max-width: 768px) {
+				.container {
+					flex-direction: column;
+					padding: 0;
+				}
+
+				.contact {
+					padding: 40px 20px;
+				}
+
+				.row {
+					flex-direction: column;
+				}
+
+				.col-md-6 {
+					min-width: 100%;
+				}
+
+				.form_col {
+					width: 100%;
+				}
+
+				.section_title h2 {
+					font-size: 24px;
+					text-align: center;
+				}
+
+				.contact_text p {
+					font-size: 15px;
+					text-align: justify;
+				}
+
+				.button.text_section_button {
+					margin: 0 auto;
+					text-align: center;
+				}
+			}
+			</style>
+
 
 		<div class="container">
 			<div class="col-lg-6">
