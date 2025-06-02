@@ -451,192 +451,194 @@
 
 
 		<!-- Services -->
-			<style>
-			.services {
-				padding: 60px 0;
-				background-color: #f8f9fa;
-			}
-
-			.services h2 {
-				text-align: center;
-				color: teal;
-				font-family: 'Segoe UI', sans-serif;
-				margin-bottom: 40px;
-				font-weight: bold;
-			}
-
-			.scroll-wrapper {
-				overflow: hidden;
-				position: relative;
-				width: 100%;
-			}
-
-			.scroll-content {
-				display: flex;
-				gap: 20px;
-				width: max-content;
-			}
-
-			.service-card {
-				flex: 0 0 auto;
-				background-color: teal;
-				color: white;
-				border-radius: 12px;
-				width: 280px;
-				padding: 30px 20px;
-				box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
-				text-align: center;
-				transition: all 0.3s ease;
-				display: flex;
-				flex-direction: column;
-				align-items: center;
-				justify-content: flex-start;
-				user-select: none;
-				touch-action: manipulation;
-			}
-
-			.service-card:hover {
-				background-color: white;
-				color: black;
-				transform: scale(1.03);
-			}
-
-			.service-card:hover p {
-				color: rgb(0, 0, 0);
-			}
-
-			.service-card img {
-				width: 70px;
-				height: 70px;
-				margin-bottom: 20px;
-			}
-
-			.service-card h4 {
-				font-size: 18px;
-				font-weight: 600;
-				margin-bottom: 10px;
-			}
-
-			.service-card p {
-				font-size: 15px;
-				color: white;
-				text-align: justify;
-				transition: color 0.3s ease;
-			}
-
-			@media (max-width: 768px) {
-				.service-card {
-				width: 220px;
-				padding: 20px;
-				}
-
-				.service-card img {
-				width: 60px;
-				height: 60px;
-				}
-			}
-
-			@media (max-width: 480px) {
-				.service-card {
-				width: 180px;
-				padding: 15px;
-				}
-
-				.service-card h4 {
-				font-size: 16px;
-				}
-
-				.service-card p {
-				font-size: 13px;
-				}
-			}
-			</style>
-
 			<div class="services">
-			<h2>Our Specialized Healthcare Services</h2>
-			<div class="scroll-wrapper" id="scroll-wrapper">
-				<div class="scroll-content" id="scroll-content">
+				<style>
+					.services {
+					padding: 60px 0;
+					background-color: #f8f9fa;
+					}
 
-				<!-- Services Cards -->
-				<div class="service-card">
-					<img src="images/24X7 nursing.png" alt="Home Nursing">
-					<h4>Home Nursing</h4>
-					<p>24x7 skilled nursing care for recovery, chronic illness, and elder support.</p>
+					.services h2 {
+					text-align: center;
+					color: teal;
+					font-family: 'Segoe UI', sans-serif;
+					margin-bottom: 40px;
+					font-weight: bold;
+					}
+
+					.scroll-wrapper {
+					overflow: hidden;
+					position: relative;
+					width: 100%;
+					}
+
+					.scroll-content {
+					display: flex;
+					gap: 20px;
+					width: max-content;
+					}
+
+					.service-card {
+					flex: 0 0 auto;
+					background-color: teal;
+					color: white;
+					border-radius: 12px;
+					width: 364px; /* 280px + 30% */
+					padding: 39px 26px; /* 30px 20px + 30% */
+					box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+					text-align: center;
+					transition: all 0.3s ease;
+					display: flex;
+					flex-direction: column;
+					align-items: center;
+					justify-content: flex-start;
+					user-select: none;
+					touch-action: manipulation;
+					}
+
+					.service-card:hover {
+					background-color: white;
+					color: black;
+					transform: scale(1.03);
+					}
+
+					.service-card:hover p {
+					color: rgb(0, 0, 0);
+					}
+
+					.service-card img {
+					width: 91px; /* 70px + 30% */
+					height: 91px;
+					margin-bottom: 20px;
+					}
+
+					.service-card h4 {
+					font-size: 18px;
+					font-weight: 600;
+					margin-bottom: 10px;
+					}
+
+					.service-card p {
+					font-size: 15px;
+					color: white;
+					text-align: justify;
+					transition: color 0.3s ease;
+					}
+
+					@media (max-width: 768px) {
+					.service-card {
+						width: 286px; /* 220px + 30% */
+						padding: 26px; /* 20px + 30% */
+					}
+
+					.service-card img {
+						width: 78px; /* 60px + 30% */
+						height: 78px;
+					}
+					}
+
+					@media (max-width: 480px) {
+					.service-card {
+						width: 234px; /* 180px + 30% */
+						padding: 19px; /* 15px + 30% */
+					}
+
+					.service-card h4 {
+						font-size: 16px;
+					}
+
+					.service-card p {
+						font-size: 13px;
+					}
+					}
+				</style>
+
+				<h2>Our Specialized Healthcare Services</h2>
+				<div class="scroll-wrapper" id="scroll-wrapper">
+					<div class="scroll-content" id="scroll-content">
+
+					<!-- Services Cards -->
+					<div class="service-card">
+						<img src="images/24X7 nursing.png" alt="Home Nursing" />
+						<h4>Home Nursing</h4>
+						<p>Providing compassionate skilled nursing care at home, tailored for recovery, chronic illness management, and elder support, ensuring comfort, safety, and professional medical assistance in a familiar environment.</p>
+					</div>
+
+					<div class="service-card">
+						<img src="images/doctor-consultation.png" alt="Doctor Consultation" />
+						<h4>Doctor's Consultation</h4>
+						<p>Licensed and experienced doctors are available for urgent or routine home visits, offering personalized consultations, medical evaluations, and treatment plans, all in the convenience of your home.</p>
+					</div>
+
+					<div class="service-card">
+						<img src="images/Physiotherapy.png" alt="Physiotherapy" />
+						<h4>Physiotherapy</h4>
+						<p>Comprehensive home-based rehabilitation services designed to restore movement, improve strength, and enhance mobility through personalized physiotherapy plans, helping patients regain independence and quality of life.</p>
+					</div>
+
+					<div class="service-card">
+						<img src="images/speech-therapy.png" alt="Speech Therapy" />
+						<h4>Speech Therapy</h4>
+						<p>Individualized speech and swallowing therapy sessions focused on improving communication skills and swallowing functions, delivered by certified therapists committed to enhancing patient confidence and health outcomes.</p>
+					</div>
+
+					<div class="service-card">
+						<img src="images/Specialized Care.png" alt="Specialized Care" />
+						<h4>Specialized Care</h4>
+						<p>Dedicated expert care for patients with complex health conditions, chronic illnesses, or post-surgery needs, provided at home with advanced medical support, monitoring, and customized treatment plans.</p>
+					</div>
+
+					</div>
 				</div>
 
-				<div class="service-card">
-					<img src="images/doctor-consultation.png" alt="Doctor Consultation">
-					<h4>Doctor's Consultation</h4>
-					<p>Licensed doctors available at home for urgent and routine visits.</p>
+				<script>
+					const scrollWrapper = document.getElementById("scroll-wrapper");
+					const scrollContent = document.getElementById("scroll-content");
+
+					// Duplicate content for infinite scroll effect
+					scrollContent.innerHTML += scrollContent.innerHTML;
+
+					let scrollSpeed = 0.3;  // slower scroll speed
+					let scrollPosition = 0;
+					let paused = false;
+
+					function autoScroll() {
+					if (!paused) {
+						scrollPosition += scrollSpeed;
+						if (scrollPosition >= scrollContent.scrollWidth / 2) {
+						scrollPosition = 0;
+						}
+						scrollWrapper.scrollLeft = scrollPosition;
+					}
+					requestAnimationFrame(autoScroll);
+					}
+
+					// Pause on hover
+					scrollWrapper.addEventListener("mouseover", () => {
+					paused = true;
+					});
+
+					scrollWrapper.addEventListener("mouseout", () => {
+					paused = false;
+					});
+
+					// Pause on mobile touch
+					let touchTimeout;
+					scrollWrapper.addEventListener("touchstart", () => {
+					paused = true;
+					clearTimeout(touchTimeout);
+					});
+
+					scrollWrapper.addEventListener("touchend", () => {
+					touchTimeout = setTimeout(() => {
+						paused = false;
+					}, 1500); // resumes after 1.5s
+					});
+
+					autoScroll();
+				</script>
 				</div>
 
-				<div class="service-card">
-					<img src="images/Physiotherapy.png" alt="Physiotherapy">
-					<h4>Physiotherapy</h4>
-					<p>Rehabilitation at home to restore movement, strength, and mobility.</p>
-				</div>
-
-				<div class="service-card">
-					<img src="images/speech-therapy.png" alt="Speech Therapy">
-					<h4>Speech Therapy</h4>
-					<p>Improve communication and swallowing through personalized therapy.</p>
-				</div>
-
-				<div class="service-card">
-					<img src="images/Specialized Care.png" alt="Specialized Care">
-					<h4>Specialized Care</h4>
-					<p>Expert care for patients with complex health conditions at home.</p>
-				</div>
-
-				</div>
-			</div>
-			</div>
-
-			<script>
-			const scrollWrapper = document.getElementById("scroll-wrapper");
-			const scrollContent = document.getElementById("scroll-content");
-
-			scrollContent.innerHTML += scrollContent.innerHTML;
-
-			let scrollSpeed = 1;
-			let scrollPosition = 0;
-			let paused = false;
-
-			function autoScroll() {
-				if (!paused) {
-				scrollPosition += scrollSpeed;
-				if (scrollPosition >= scrollContent.scrollWidth / 2) {
-					scrollPosition = 0;
-				}
-				scrollWrapper.scrollLeft = scrollPosition;
-				}
-				requestAnimationFrame(autoScroll);
-			}
-
-			// Pause on hover
-			scrollWrapper.addEventListener("mouseover", () => {
-				paused = true;
-			});
-
-			scrollWrapper.addEventListener("mouseout", () => {
-				paused = false;
-			});
-
-			// Pause on mobile touch
-			let touchTimeout;
-			scrollWrapper.addEventListener("touchstart", () => {
-				paused = true;
-				clearTimeout(touchTimeout);
-			});
-
-			scrollWrapper.addEventListener("touchend", () => {
-				touchTimeout = setTimeout(() => {
-				paused = false;
-				}, 1500); // resumes after 1.5s
-			});
-
-			autoScroll();
-			</script>
 
 
 		<!-- Brochure Download Modal -->
