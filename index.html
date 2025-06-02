@@ -451,158 +451,193 @@
 
 
 		<!-- Services -->
-		<style>
-		.services {
-		padding: 50px 0;
-		background-color: #f8f9fa;
-		}
-		.services h2 {
-		text-align: center;
-		color: teal;
-		margin-bottom: 40px;
-		}
-		.service_col {
-		margin-bottom: 30px;
-		}
-		.service {
-		background-color: teal;
-		border-radius: 8px;
-		padding: 30px 20px;
-		min-height: 400px;
-		transition: all 0.3s ease;
-		box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-		display: flex;
-		flex-direction: column;
-		justify-content: space-between;
-		}
-		.service:hover {
-		background-color: white;
-		}
-		.service_icon img {
-		width: 60px;
-		height: 60px;
-		margin-bottom: 15px;
-		transition: all 0.3s ease;
-		}
-		/* Text styling */
-		.service_title {
-		font-weight: 600;
-		font-size: 20px;
-		margin-bottom: 15px;
-		color: white;
-		transition: color 0.3s ease;
-		}
-		.service_text p {
-		font-size: 16px;
-		text-align: justify;
-		color: white;
-		transition: color 0.3s ease;
-		}
-		/* Hover color changes only text, not icon */
-		.service:hover .service_title,
-		.service:hover .service_text p {
-		color: black;
-		}
-		</style>
+			<style>
+			.services {
+				padding: 60px 0;
+				background-color: #f8f9fa;
+			}
 
-		<div class="services">
-		<h2 style=" font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Our Specialized Healthcare Services</h2>
-		<div class="container">
-			<div class="row">
+			.services h2 {
+				text-align: center;
+				color: teal;
+				font-family: 'Segoe UI', sans-serif;
+				margin-bottom: 40px;
+				font-weight: bold;
+			}
 
-			<!-- Service 1 -->
-			<div class="col-lg-4 col-md-6 service_col">
-				<a href="services.html">
-				<div class="service text-center">
-					<div class="service_icon">
-					<img class="svg" src="images/24X7 nursing.png" alt="24X7 Home Nursing">
-					</div>
-					<div class="service_title">Home Nursing</div>
-					<div class="service_text">
-					<p>TrueLife Healthcare offers round-the-clock nursing care at home, ensuring expert support for post-surgical recovery, chronic disease management, elderly care, and medication assistance—because your health deserves constant, compassionate attention.</p>
-					</div>
+			.scroll-wrapper {
+				overflow: hidden;
+				position: relative;
+				width: 100%;
+			}
+
+			.scroll-content {
+				display: flex;
+				gap: 20px;
+				width: max-content;
+			}
+
+			.service-card {
+				flex: 0 0 auto;
+				background-color: teal;
+				color: white;
+				border-radius: 12px;
+				width: 280px;
+				padding: 30px 20px;
+				box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+				text-align: center;
+				transition: all 0.3s ease;
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: flex-start;
+				user-select: none;
+				touch-action: manipulation;
+			}
+
+			.service-card:hover {
+				background-color: white;
+				color: black;
+				transform: scale(1.03);
+			}
+
+			.service-card:hover p {
+				color: rgb(0, 0, 0);
+			}
+
+			.service-card img {
+				width: 70px;
+				height: 70px;
+				margin-bottom: 20px;
+			}
+
+			.service-card h4 {
+				font-size: 18px;
+				font-weight: 600;
+				margin-bottom: 10px;
+			}
+
+			.service-card p {
+				font-size: 15px;
+				color: white;
+				text-align: justify;
+				transition: color 0.3s ease;
+			}
+
+			@media (max-width: 768px) {
+				.service-card {
+				width: 220px;
+				padding: 20px;
+				}
+
+				.service-card img {
+				width: 60px;
+				height: 60px;
+				}
+			}
+
+			@media (max-width: 480px) {
+				.service-card {
+				width: 180px;
+				padding: 15px;
+				}
+
+				.service-card h4 {
+				font-size: 16px;
+				}
+
+				.service-card p {
+				font-size: 13px;
+				}
+			}
+			</style>
+
+			<div class="services">
+			<h2>Our Specialized Healthcare Services</h2>
+			<div class="scroll-wrapper" id="scroll-wrapper">
+				<div class="scroll-content" id="scroll-content">
+
+				<!-- Services Cards -->
+				<div class="service-card">
+					<img src="images/24X7 nursing.png" alt="Home Nursing">
+					<h4>Home Nursing</h4>
+					<p>24x7 skilled nursing care for recovery, chronic illness, and elder support.</p>
 				</div>
-				</a>
-			</div>
 
-			<!-- Service 2 -->
-			<div class="col-lg-4 col-md-6 service_col">
-				<a href="services.html">
-				<div class="service text-center">
-					<div class="service_icon">
-					<img class="svg" src="images/doctor-consultation.png" alt="Doctor's Consultation">
-					</div>
-					<div class="service_title">Doctor's Consultation</div>
-					<div class="service_text">
-					<p>At TrueLife Healthcare, DHA-licensed doctors deliver tailored medical care at home, from urgent visits to chronic disease management, across Dubai and UAE.</p>
-					</div>
+				<div class="service-card">
+					<img src="images/doctor-consultation.png" alt="Doctor Consultation">
+					<h4>Doctor's Consultation</h4>
+					<p>Licensed doctors available at home for urgent and routine visits.</p>
 				</div>
-				</a>
-			</div>
 
-			<!-- Service 3 -->
-			<div class="col-lg-4 col-md-6 service_col">
-				<a href="services.html">
-				<div class="service text-center">
-					<div class="service_icon">
-					<img class="svg" src="images/Physiotherapy.png" alt="Physiotherapy">
-					</div>
-					<div class="service_title">Physiotherapy</div>
-					<div class="service_text">
-					<p>TrueLife Healthcare provides personalized rehabilitation services to restore mobility, strength, and independence after injury, surgery, or illness.</p>
-					</div>
+				<div class="service-card">
+					<img src="images/Physiotherapy.png" alt="Physiotherapy">
+					<h4>Physiotherapy</h4>
+					<p>Rehabilitation at home to restore movement, strength, and mobility.</p>
 				</div>
-				</a>
-			</div>
 
-			<!-- Service 4 -->
-			<div class="col-lg-4 col-md-6 service_col">
-				<a href="services.html">
-				<div class="service text-center">
-					<div class="service_icon">
-					<img class="svg" src="images/speech-therapy.png" alt="Speech Therapy">
-					</div>
-					<div class="service_title">Speech Therapy</div>
-					<div class="service_text">
-					<p>Truelife Healthcare provides tailored speech and language therapy to enhance communication and swallowing skills for children and adults.</p>
-					</div>
+				<div class="service-card">
+					<img src="images/speech-therapy.png" alt="Speech Therapy">
+					<h4>Speech Therapy</h4>
+					<p>Improve communication and swallowing through personalized therapy.</p>
 				</div>
-				</a>
-			</div>
 
-			<!-- Service 5-->
-			<div class="col-lg-4 col-md-6 service_col">
-				<a href="services.html">
-				<div class="service text-center">
-					<div class="service_icon">
-					<img class="svg" src="images/Occupational Therapy.png" alt="Occupational Therapy">
-					</div>
-					<div class="service_title">Occupational Therapy</div>
-					<div class="service_text">
-					<p>Empowering independence with customized therapy for all ages, addressing physical, neurological, and developmental challenges, right at your doorstep.</p>
-					</div>
+				<div class="service-card">
+					<img src="images/Specialized Care.png" alt="Specialized Care">
+					<h4>Specialized Care</h4>
+					<p>Expert care for patients with complex health conditions at home.</p>
 				</div>
-				</a>
-			</div>
 
-			<!-- Service 6 -->
-			<div class="col-lg-4 col-md-6 service_col">
-				<a href="services.html">
-				<div class="service text-center">
-					<div class="service_icon">
-					<img class="svg" src="images/Specialized Care.png" alt="Specialized Care">
-					</div>
-					<div class="service_title">Specialized Care</div>
-					<div class="service_text">
-					<p>our Specialized Care services are designed to meet the complex medical needs of patients requiring focused and expert attention in the comfort of their homes. Our experienced healthcare professionals deliver personalized care plans.</p>
-					</div>
 				</div>
-				</a>
+			</div>
 			</div>
 
-			</div>
-		</div>
-		</div>
+			<script>
+			const scrollWrapper = document.getElementById("scroll-wrapper");
+			const scrollContent = document.getElementById("scroll-content");
+
+			scrollContent.innerHTML += scrollContent.innerHTML;
+
+			let scrollSpeed = 1;
+			let scrollPosition = 0;
+			let paused = false;
+
+			function autoScroll() {
+				if (!paused) {
+				scrollPosition += scrollSpeed;
+				if (scrollPosition >= scrollContent.scrollWidth / 2) {
+					scrollPosition = 0;
+				}
+				scrollWrapper.scrollLeft = scrollPosition;
+				}
+				requestAnimationFrame(autoScroll);
+			}
+
+			// Pause on hover
+			scrollWrapper.addEventListener("mouseover", () => {
+				paused = true;
+			});
+
+			scrollWrapper.addEventListener("mouseout", () => {
+				paused = false;
+			});
+
+			// Pause on mobile touch
+			let touchTimeout;
+			scrollWrapper.addEventListener("touchstart", () => {
+				paused = true;
+				clearTimeout(touchTimeout);
+			});
+
+			scrollWrapper.addEventListener("touchend", () => {
+				touchTimeout = setTimeout(() => {
+				paused = false;
+				}, 1500); // resumes after 1.5s
+			});
+
+			autoScroll();
+			</script>
+
 
 		<!-- Brochure Download Modal -->
 		<!-- Brochure Modal -->
