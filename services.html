@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="icon" type="image/x-icon" href="images/favicon.ico">
+<title>Services</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content="CareMed demo project">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="styles/bootstrap4/bootstrap.min.css">
+<link href="plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.carousel.css">
+<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.theme.default.css">
+<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/animate.css">
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" type="text/css" href="styles/services.css">
+<link rel="stylesheet" type="text/css" href="styles/services_responsive.css">
+</head>
+<body>
+
+<div class="super_container">
+	
+	<!-- Header -->
+	<header>
+		<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-white shadow-sm">
+		  <div class="container">
+			<!-- Logo -->
+			<a class="navbar-brand" href="index.html">
+			  <img src="images/logo1.jpg" style="height:60px; width: 150px;" alt="Logo" class="logo">
+			  <div class="tagline-slider">
+				<div class="tagline-track">
+				  <span style="color: teal; font-family: Verdana, Geneva, Tahoma, sans-serif;">TRUE life | TRUE care | TRUE comfort &nbsp;&nbsp;&nbsp;</span>
+				</div>
+			  </div>
+			</a>
+	  
+			<!-- Navbar Toggler Button for Mobile -->
+			<button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+			  aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+			  <span class="navbar-toggler-icon"></span>
+			</button>
+	  
+			<!-- Navbar Links -->
+			<div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+			  <ul class="navbar-nav gap-3">
+				<li class="nav-item"><a class="nav-link text-dark fw-bold nav-hover" style="font-size: large;" href="index.html">Home</a></li>
+				<li class="nav-item"><a class="nav-link text-dark fw-bold nav-hover" style="font-size: large;" href="about.html">About us</a></li>
+	  
+				<!-- Services Dropdown -->
+				<!-- Services Dropdown -->
+				<li class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle text-dark fw-bold nav-hover" style="font-size: large;" href="#"
+					role="button" data-bs-toggle="dropdown" aria-expanded="false" id="servicesDropdown">
+					Services
+				</a>
+
+				<ul class="dropdown-menu">
+					<li><a class="dropdown-item" href="nursing service.html" style="color: black;">Nursing Care</a></li>
+					<li><a class="dropdown-item" href="doctor consultation.html" style="color: black;">Doctor Consultation</a></li>
+					<li><a class="dropdown-item" href="Physiotherapy.html" style="color: black;">Physiotherapy</a></li>
+					<li><a class="dropdown-item" href="Speech therapy.html" style="color: black;">Speech Therapy</a></li>
+					<!--<li><a class="dropdown-item" href="Occupational Therapy.html" style="color: black;">Occupational Therapy</a></li>-->
+				</ul>
+				</li>
+
+	  
+				<li class="nav-item"><a class="nav-link text-dark fw-bold nav-hover" style="font-size: large;" href="contact.html">Contact Us</a></li>
+				<li class="nav-item">
+				  <a class="btn-slide" href="#" data-bs-toggle="modal" data-bs-target="#brochureModal">
+					<span class="circle"><i class="fa fa-file-pdf"></i></span>
+					<span class="title">Brochure</span>
+					<span class="title title-hover">Download Now</span>
+				  </a>
+				</li>
+			  </ul>
+			</div>
+		  </div>
+		</nav>
+	  </header>
+	  <script>
+			document.addEventListener("DOMContentLoaded", function () {
+				const servicesLink = document.getElementById("servicesDropdown");
+
+				servicesLink.addEventListener("click", function (e) {
+				const isMobile = window.innerWidth < 992; // Bootstrap lg breakpoint
+				if (isMobile) {
+					// Just toggle dropdown; prevent redirect
+					e.preventDefault();
+					const dropdown = new bootstrap.Dropdown(servicesLink);
+					dropdown.toggle();
+				} else {
+					// On desktop, redirect
+					window.location.href = "services.html";
+				}
+				});
+			});
+	    </script>
+	  
+	  <!-- Bootstrap JS (ensure the correct version) -->
+	  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+	  
+	  
+	
+	<!-- Home
+
+	<div class="home">
+		<div class="home_background parallax-window" data-parallax="scroll" data-image-src="images/services_teal.jpg" data-speed="0.8"></div>
+		<div class="home_container">
+			<div class="container">
+				<div class="row">
+					<div class="col">
+						<div class="home_content">
+							<div class="home_title"><span>Truelife Home Healthcare</span> Services</div>
+							<div class="breadcrumbs">
+								<ul>
+									<li><a href="index.html">Home</a></li>
+									<li>Services</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>-->
+
+	<!-- WhatsApp Floating Button with Tooltip -->
+			<a href="https://wa.me/971589477102?text=Hi%20there!%20I%27m%20interested%20in%20your%20services." 
+			class="whatsapp-float" target="_blank">
+				<span class="tooltip-text">Chat with us</span>
+				<img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" alt="Chat on WhatsApp">
+			</a>
+
+			<!-- Add this to your CSS -->
+			<style>
+			.whatsapp-float {
+				position: fixed;
+				bottom: 20px;
+				right: 20px;
+				z-index: 999;
+				cursor: pointer;
+				text-decoration: none;
+				display: flex;
+				align-items: center;
+			}
+
+			.whatsapp-float .tooltip-text {
+				visibility: hidden;
+				background-color: teal;
+				color: #fff;
+				text-align: center;
+				border-radius: 6px;
+				padding: 5px 10px;
+				position: absolute;
+				bottom: 60px;
+				right: 0;
+				white-space: nowrap;
+				font-size: 14px;
+				z-index: 1000;
+				opacity: 0;
+				transition: opacity 0.3s;
+			}
+
+			.whatsapp-float:hover .tooltip-text {
+				visibility: visible;
+				opacity: 1;
+			}
+
+			.whatsapp-float img {
+				width: 48px;
+				height: 48px;
+			}
+			</style>
+
+
+	<!--Text Section-->
+
+	<div class="text_section">
+		<div class="container">
+			<div class="row">
+				
+				<!-- Text Section Image -->
+				<div class="col-lg-5">
+					<div class="text_section_image"><img src="images/Medical care treatment.jpg" alt=""></div>
+				</div>
+
+				<!-- Text Section Content -->
+				<div class="col-lg-7">
+					<div class="text_section_content">
+						<div class="section_title"><h2 style="color: teal;">Bringing Exceptional Home Health Services</h2></div>
+						<div class="text_section_text">
+							<p style="font-size: 15px; text-align: justify; font-size: 16px; margin-bottom: 20px;">Truelife Home Healthcare brings trusted medical care and wellness services directly to your doorstep—because your health and comfort should never be compromised. Our comprehensive range of home healthcare services in Dubai is designed to meet the unique needs of individuals and families across the UAE. Whether you need urgent medical attention or long-term support at home, we’re here to deliver care that’s professional, compassionate, and always close by.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- Services -->
+
+	<div class="services_section">
+    
+		<!-- Service 1: Home Care Nursing 24/7 -->
+		<div class="service_row full-width" style="background: #ffffff;">
+			<div class="row no-gutters">
+				<div class="col-lg-5">
+					<div class="service_image"><img src="images/24hrs care.jpg" alt="Home Care Nursing 24/7"></div>
+				</div>
+				<div class="col-lg-7">
+					<div class="service_content">
+						<h2>Nursing Care</h2>
+						<p style="font-size: 15px; text-align: justify; font-size: 16px; margin-bottom: 20px;">Our dedicated nurses are available around the clock to ensure continuous health monitoring, effective medication management, and personalized nursing care. Whether it’s managing a chronic condition or providing post-operative support, our service guarantees professional care whenever you need it.</p>
+						<div class="button text_section_button">
+							<a href="nursing service.html">Read More</a>
+				  		</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	
+		<!-- Service 2: Medical Care & Treatment -->
+		<div class="service_row full-width" style="background: #008081;">
+			<div class="row no-gutters flex-row-reverse">
+				<div class="col-lg-5">
+					<div class="service_image"><img src="images/doctor's Consultation.jpg" alt="Medical Care & Treatment"></div>
+				</div>
+				<div class="col-lg-7">
+					<div class="service_content">
+						<h2 style="color: white;">Doctor's Consultation</h2>
+						<p style="font-size: 15px; text-align: justify; font-size: 16px; margin-bottom: 20px; color: white;">Get personalized doctor consultations tailored to your health needs. From expert medical advice to post-hospitalization care and specialized treatments, our experienced doctors are here to support your recovery and long-term well-being.</p>
+						<div class="button text_section_button" style="background-color: white;">
+							<a href="doctor consultation.html" style="color: teal;">Read More</a>
+				  		</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	
+		<!-- Service 3: Personal Care -->
+		<div class="service_row full-width" style="background: #ffffff;">
+			<div class="row no-gutters">
+				<div class="col-lg-5">
+					<div class="service_image"><img src="images/Physiotherapy.jpg" alt="Personal Care"></div>
+				</div>
+				<div class="col-lg-7">
+					<div class="service_content">
+						<h2>Physiotherapy</h2>
+						<p style="font-size: 15px; text-align: justify; font-size: 16px; margin-bottom: 20px;">Our home physiotherapy services focus on restoring mobility, strength, and function after illness, injury, or surgery. Our licensed physiotherapists develop personalized treatment plans to help patients recover comfortably in their own homes, improving quality of life and independence.</p>
+						<div class="button text_section_button">
+							<a href="Physiotherapy.html">Read More</a>
+				  		</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	
+		<!-- Service 4: Health Monitoring & Assessment -->
+		<div class="service_row full-width" style="background: #008081;">
+			<div class="row no-gutters flex-row-reverse">
+				<div class="col-lg-5">
+					<div class="service_image"><img src="images/speech therapy 1.jpg" alt="Health Monitoring & Assessment"></div>
+				</div>
+				<div class="col-lg-7">
+					<div class="service_content">
+						<h2 style="color: white;">Speech Therapy</h2>
+						<p style="font-size: 15px; text-align: justify; font-size: 16px; margin-bottom: 20px; color: white;">We provide speech and language therapy for children and adults facing communication or swallowing difficulties. Our therapists use evidence-based methods to enhance speech clarity, language skills, and confidence, ensuring effective communication in daily life.</p>
+						<div class="button text_section_button" style="background-color: white;">
+							<a href="Speech therapy.html" style="color: teal;">Read More</a>
+				  		</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	
+		<!-- Service 5: Rehabilitation & Therapy-->
+		<div class="service_row full-width" style="background: #ffffff;">
+			<div class="row no-gutters">
+				<div class="col-lg-5">
+					<div class="service_image"><img src="images/Specialised healthcare.jpg" alt="Rehabilitation & Therapy"></div>
+				</div>
+				<div class="col-lg-7">
+					<div class="service_content">
+						<h2>Specialized Care</h2>
+						<p style="font-size: 15px; text-align: justify; font-size: 16px; margin-bottom: 20px;">TrueLife offers specialized care for complex health conditions, including stroke recovery, dementia care, chronic disease management, and palliative support. Our highly trained caregivers provide compassionate and customized care tailored to each patient’s unique medical needs.</p>
+						<div class="button text_section_button">
+							<a href="services.html">Read More</a>
+				  		</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	
+		<!-- Service 6: Education & Support
+		<div class="service_row full-width" style="background: #008081;">
+			<div class="row no-gutters flex-row-reverse">
+				<div class="col-lg-5">
+					<div class="service_image"><img src="images/Specialised healthcare.jpg" alt="Education & Support"></div>
+				</div>
+				<div class="col-lg-7">
+					<div class="service_content">
+						<h2 style="color: white;">Specialized Care</h2>
+						<p style="font-size: 15px; text-align: justify; font-size: 16px; margin-bottom: 20px; color: white;">TrueLife offers specialized care for complex health conditions, including stroke recovery, dementia care, chronic disease management, and palliative support. Our highly trained caregivers provide compassionate and customized care tailored to each patient’s unique medical needs.</p>
+						<!--<div class="button text_section_button" style="background-color: white;">
+							<a href="services.html" style="color: teal;">Read More</a>
+				  		</div>-->
+					</div>
+				</div>
+			</div>
+		</div>
+		<br>
+		<br>
+		<br>
+		<br>
+	
+		<!-- Service 9: Household Assistance
+		<div class="service_row full-width" style="background: #ffffff;">
+			<div class="row no-gutters">
+				<div class="col-lg-5">
+					<div class="service_image"><img src="images/Household assitance.jpg" alt="Household Assistance"></div>
+				</div>
+				<div class="col-lg-7">
+					<div class="service_content">
+						<h2>Household Assistance</h2>
+						<p>Support for daily household tasks, including meal preparation, housekeeping, and errands to enhance patient comfort and quality of life.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>-->
+	
+	
+
+	<!-- Features 
+
+	<div class="features" style="background-color: white;">
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<div class="features_container d-flex flex-row flex-wrap align-items-start justify-content-between">
+						
+					
+						<div class="feature">
+							<div class="feature_image"><img src="images/features_1.jpg" alt=""></div>
+							<div class="feature_content">
+								<div class="section_title"><h2>We help you</h2></div>
+								<div class="feature_text">
+									<p style="font-size: 15px; text-align: justify; font-size: 16px; margin-bottom: 20px;">We are dedicated to providing expert medical care, personalized support, and compassionate assistance to improve your quality of life. Whether you need 24/7 nursing care, rehabilitation, elderly care, or post-surgical support, we are here for your well-being.</p>
+								</div>
+							</div>
+						</div>
+
+						
+						<div class="feature">
+							<div class="feature_image"><img src="images/features_2.jpg" alt=""></div>
+							<div class="feature_content">
+								<div class="section_title"><h2>Medicine for you</h2></div>
+								<div class="feature_text">
+									<p style="font-size: 15px; text-align: justify; font-size: 16px; margin-bottom: 20px;">We believe that every patient is unique, and so is their healthcare journey. Our expert team provides tailored medical solutions, ensuring the right treatment, care, and support based on your individual needs.</p>
+								</div>
+							</div>
+						</div>
+
+						
+						<div class="feature">
+							<div class="feature_image"><img src="images/features_3.jpg" alt=""></div>
+							<div class="feature_content">
+								<div class="section_title"><h2>Amazing technology</h2></div>
+								<div class="feature_text">
+									<p style="font-size: 15px; text-align: justify; font-size: 16px; margin-bottom: 20px;">The power of cutting-edge medical technology to deliver efficient, accurate, and patient-centric care right at your doorstep. Our innovative approach ensures better health monitoring, faster recovery, and enhanced well-being.</p>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>		
+	</div>-->
+
+	<!-- Brochure Download Modal -->
+		
+	<div class="modal fade" id="brochureModal" tabindex="-1" aria-labelledby="brochureModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content" style="position: relative;">
+
+				<!-- Visible "X" Close Button -->
+				<button type="button" data-bs-dismiss="modal" aria-label="Close"
+					style="position: absolute; top: 10px; right: 15px; font-size: 1.5rem; border: none; background: transparent; color: white; z-index: 1055;">
+					&times;
+				</button>
+
+				<div class="modal-header"
+					style="background: #008180; color: white; border-top-left-radius: 5px; border-top-right-radius: 5px;">
+					<h5 class="modal-title mx-auto" id="brochureModalLabel">Download Our Brochure</h5>
+				</div>
+
+				<div class="modal-body">
+					<div class="form-container">
+						<form id="downloadForm" action="https://api.web3forms.com/submit" method="POST">
+							<input type="hidden" name="access_key" value="5474795c-3c97-4481-9692-ec816b98edde">
+
+							<div class="form-group mb-3">
+								<label for="name">Name</label>
+								<input type="text" id="name" name="name" class="form-control" placeholder="Your Name"
+									required>
+							</div>
+
+							<div class="form-group mb-3">
+								<label for="email">Email</label>
+								<input type="email" id="email" name="email" class="form-control" placeholder="Your Email"
+									required>
+							</div>
+
+							<div class="form-group mb-4">
+								<label for="phone">Phone Number</label>
+								<input type="tel" id="phone" name="phone" class="form-control"
+									placeholder="Your Phone Number" required>
+							</div>
+
+							<!-- Animated Button -->
+							<button type="submit" class="btn-normal">Download Brochure</button>
+
+						</form>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</div>
+
+	<script>
+		document.getElementById("downloadForm").addEventListener("submit", function (event) {
+			event.preventDefault();
+
+			let formData = new FormData(this);
+
+			fetch("https://api.web3forms.com/submit", {
+				method: "POST",
+				body: formData
+			})
+				.then(response => response.json())
+				.then(data => {
+					if (data.success) {
+						alert("Thank you! Your brochure is now downloading.");
+						window.location.href = "Document/TL Updated Brochure.pdf"; // Update with actual file path
+					} else {
+						alert("Form submission failed. Please try again.");
+					}
+				})
+				.catch(error => {
+					console.error("Error:", error);
+					alert("An error occurred. Please try again.");
+				});
+		});
+	</script>
+
+
+	<!-- Call to action
+
+	<div class="cta">
+		<div class="cta_background parallax-window" data-parallax="scroll" data-image-src="images/cta.jpg" data-speed="0.8"></div>
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<div class="cta_content text-center">
+						<h2>Need a personal health plan?</h2>
+						<p>Duis massa massa, mollis vel ullamcorper quis, finibus et urna. Aliquam ac eleifend metus. Ut sollicitudin risus ex</p>
+						<div class="button cta_button"><a href="#">request a plan</a></div>
+					</div>
+				</div>
+			</div>
+		</div>		
+	</div>-->
+
+	<!-- Footer -->
+	 <div class="footer-wrapper pt-5">
+		<div class="container">
+			<div class="row g-4 justify-content-center text-center text-md-start">
+
+			<!-- Company Info -->
+			<div class="col-lg-4 col-md-6">
+				<h3 class="footer-title">Company Info</h3>
+				<p class="mb-4" style="font-size: 15px; text-align: justify; font-size: 16px; margin-bottom: 20px; color: white;">TrueLife Healthcare is dedicated to providing compassionate and personalized care in the comfort of your home — because your well-being is our priority.</p>
+			</div>
+
+			<!-- Contact Info -->
+			<div class="col-lg-4 col-md-6">
+				<h3 class="footer-title">Contact Us</h3>
+				<ul class="footer-links">
+				<li><i class="fas fa-map-marker-alt"></i> <a href="https://www.google.com/maps/place/Al+Nasriya+Building+,Block+B,+OFFICE+104/"style="font-size: 15px; text-align: justify; font-size: 16px; margin-bottom: 20px;">Office No. 314, 3rd Floor, Al Nasriya Building, Al Qusais, Dubai, UAE</a></li>
+				<li><i class="fas fa-envelope"></i> <a href="mailto:info@truelifehomehealth.ae">info@truelifehomehealth.ae</a></li>
+				<li><i class="fas fa-phone"></i> <a href="tel:+971526769498">+9714-5726692</a></li>
+				<li><i class="fas fa-phone"></i> <a href="tel:+971526769498">+971-589477102</a></li>
+				</ul><br>
+				<div class="social-links" style="padding-right:140px;">
+				<a href="#"><i class="fab fa-facebook-f"></i></a>
+				<a href="#"><i class="fab fa-instagram"></i></a>
+				<a href="#"><i class="fab fa-linkedin-in"></i></a>
+				</div>
+			</div>
+
+			<!-- Quick Links -->
+			<div class="col-lg-4 col-md-12">
+				<h3 class="footer-title">Quick Links</h3>
+				<ul class="footer-links">
+				<li><i class="fas fa-angle-right"></i> <a href="index.html">Home</a></li>
+				<li><i class="fas fa-angle-right"></i> <a href="services.html">Services</a></li>
+				<li><i class="fas fa-angle-right"></i> <a href="about.html">About Us</a></li>
+				<li><i class="fas fa-angle-right"></i> <a href="contact.html">Contact</a></li>
+				</ul>
+			</div>
+
+			</div>
+		</div>
+			<!-- Footer Bottom -->
+			<div class="footer-bottom mt-5 py-3">
+				<div class="container text-center">
+				<p class="mb-0">&copy; 2025 TrueLife Healthcare. All rights reserved.</p>
+				</div>
+			</div>
+
+			<!-- Internal CSS -->
+			<style>
+				.footer-wrapper {
+				background: #333;
+				color: #ffffff;
+				}
+
+				.footer-title {
+				color: #fff;
+				font-size: 20px;
+				margin-bottom: 1.2rem;
+				font-weight: 600;
+				position: relative;
+				}
+
+				.footer-title::after {
+				content: '';
+				position: absolute;
+				left: 0;
+				bottom: -8px;
+				width: 40px;
+				height: 2px;
+				background: #F18070;
+				}
+
+				.footer-description {
+				font-size: 16px;
+				color: #ffffff;
+				text-align: justify;
+				}
+
+				.footer-links {
+				list-style: none;
+				padding: 0;
+				margin: 0;
+				}
+
+				.footer-links li {
+				margin-bottom: 12px;
+				display: flex;
+				align-items: start;
+				gap: 10px;
+				}
+
+				.footer-links i {
+				color: #F18070;
+				margin-top: 3px;
+				}
+
+				.footer-links a {
+				color: #ffffff;
+				text-decoration: none;
+				font-size: 16px;
+				transition: all 0.3s ease;
+				}
+
+				.footer-links a:hover {
+				color: #F18070;
+				padding-left: 5px;
+				}
+
+				.social-links {
+				display: flex;
+				gap: 12px;
+				flex-wrap: wrap;
+				}
+
+				.social-links a {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				width: 38px;
+				height: 38px;
+				border-radius: 50%;
+				background: rgba(255, 255, 255, 0.1);
+				color: white;
+				transition: 0.3s ease;
+				}
+
+				.social-links a:hover {
+				background: #ffffff;
+				color: teal;
+				transform: scale(1.1);
+				}
+
+				.footer-bottom {
+				background: #2c2c2c;
+				color: #ccc;
+				font-size: 14px;
+				}
+
+				/* Mobile Responsiveness */
+				@media (max-width: 768px) {
+				.footer-wrapper {
+					text-align: center;
+				}
+
+				.footer-links li {
+					justify-content: center;
+				}
+
+				.footer-title::after {
+					left: 50%;
+					transform: translateX(-50%);
+				}
+
+				.social-links {
+					justify-content: center;
+				}
+				}
+			</style>
+			</div>
+
+		<!-- Font Awesome -->
+		<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</div>
+
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="styles/bootstrap4/popper.js"></script>
+<script src="styles/bootstrap4/bootstrap.min.js"></script>
+<script src="plugins/easing/easing.js"></script>
+<script src="plugins/parallax-js-master/parallax.min.js"></script>
+<script src="js/services.js"></script>
+</body>
+</html>

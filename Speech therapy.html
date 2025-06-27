@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link rel="icon" type="image/x-icon" href="images/favicon.ico">
+<title>Truelife Home Healthcare</title>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="description" content="CareMed demo project">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="styles/bootstrap4/bootstrap.min.css">
+<link href="plugins/font-awesome-4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.carousel.css">
+<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/owl.theme.default.css">
+<link rel="stylesheet" type="text/css" href="plugins/OwlCarousel2-2.2.1/animate.css">
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" type="text/css" href="styles/main_styles.css">
+<link rel="stylesheet" type="text/css" href="styles/responsive.css">
+</head>
+<body>
+
+<div class="super_container">
+	
+	<!-- Header -->
+	<header>
+		<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-white shadow-sm">
+		  <div class="container">
+			<!-- Logo -->
+			<a class="navbar-brand" href="index.html">
+			  <img src="images/logo1.jpg" style="height:100px; width: 150px;" alt="Logo" class="logo">
+			  <div class="tagline-slider">
+				<div class="tagline-track">
+				  <span style="color: teal; font-family: Verdana, Geneva, Tahoma, sans-serif;">TRUE life | TRUE care | TRUE comfort &nbsp;&nbsp;&nbsp;</span>
+				</div>
+			  </div>
+			</a>
+	  
+			<!-- Navbar Toggler Button for Mobile -->
+			<button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+			  aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+			  <span class="navbar-toggler-icon"></span>
+			</button>
+	  
+			<!-- Navbar Links -->
+			<div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+			  <ul class="navbar-nav gap-3">
+				<li class="nav-item"><a class="nav-link text-dark fw-bold nav-hover" style="font-size: large;" href="index.html">Home</a></li>
+				<li class="nav-item"><a class="nav-link text-dark fw-bold nav-hover" style="font-size: large;" href="about.html">About us</a></li>
+	  
+				<!-- Services Dropdown -->
+				<!-- Services Dropdown -->
+				<li class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle text-dark fw-bold nav-hover" style="font-size: large;" href="#"
+					role="button" data-bs-toggle="dropdown" aria-expanded="false" id="servicesDropdown">
+					Services
+				</a>
+
+				<ul class="dropdown-menu">
+					<li><a class="dropdown-item" href="nursing service.html" style="color: black;">Nursing Care</a></li>
+					<li><a class="dropdown-item" href="doctor consultation.html" style="color: black;">Doctor Consultation</a></li>
+					<li><a class="dropdown-item" href="Physiotherapy.html" style="color: black;">Physiotherapy</a></li>
+					<li><a class="dropdown-item" href="Speech therapy.html" style="color: black;">Speech Therapy</a></li>
+					<!--<li><a class="dropdown-item" href="Occupational Therapy.html" style="color: black;">Occupational Therapy</a></li>-->
+				</ul>
+				</li>
+
+	  
+				<li class="nav-item"><a class="nav-link text-dark fw-bold nav-hover" style="font-size: large;" href="contact.html">Contact Us</a></li>
+				<li class="nav-item">
+				  <a class="btn-slide" href="#" data-bs-toggle="modal" data-bs-target="#brochureModal">
+					<span class="circle"><i class="fa fa-file-pdf"></i></span>
+					<span class="title">Brochure</span>
+					<span class="title title-hover">Download Now</span>
+				  </a>
+				</li>
+			  </ul>
+			</div>
+		  </div>
+		</nav>
+	  </header>
+	  <script>
+			document.addEventListener("DOMContentLoaded", function () {
+				const servicesLink = document.getElementById("servicesDropdown");
+
+				servicesLink.addEventListener("click", function (e) {
+				const isMobile = window.innerWidth < 992; // Bootstrap lg breakpoint
+				if (isMobile) {
+					// Just toggle dropdown; prevent redirect
+					e.preventDefault();
+					const dropdown = new bootstrap.Dropdown(servicesLink);
+					dropdown.toggle();
+				} else {
+					// On desktop, redirect
+					window.location.href = "services.html";
+				}
+				});
+			});
+	    </script>
+	  
+	  <!-- Bootstrap JS (ensure the correct version) -->
+	  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+      <!--CONTENT-->
+      <div class="container py-5">
+		<div class="row align-items-center">
+			<div class="col-md-6 mb-4 mb-md-0">
+			<img src="images/speech therapy 1.jpg" alt="24x7 Nursing Care" class="img-fluid rounded">
+			</div>
+			<div class="col-md-6">
+			<h2 class="text-primary mb-3" style="color: teal !important;">Speech Therapy</h2>
+			<p style="text-align: justify; font-size: 16px;">
+				At TrueLife Home Healthcare, we believe communication is the key to connection, learning, and independence. Our home-based Speech Therapy services are designed to support children and adults facing challenges with speech, language, voice, or swallowing — all from the safety and comfort of their own home.
+               Delivered by our highly qualified, DHA-licensed speech therapists, each session is tailored to the individual’s specific goals, age, and needs — whether developmental, neurological, or injury-related.
+			</div>
+		</div>
+		</div>
+    
+    <style>
+        @media screen and (max-width: 768px) {
+            /* Stack the image and paragraph on smaller screens */
+            div {
+                display: block;
+                text-align: center;
+            }
+    
+            img {
+                width: 100%; /* Image takes full width */
+                margin-right: 0;
+                margin-bottom: 20px;
+            }
+    
+            /* Adjust text container to be full width and centered */
+            .text-container {
+                width: 100%;
+                padding: 0 10px;
+            }
+    
+            /* Increase gap between text and image */
+            h2 {
+                margin-top: 20px;
+            }
+        }
+    </style>
+    
+      </div>
+      <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; padding: 40px;">
+        <style>
+          @keyframes slideIn {
+            from {
+              transform: translateX(-100%);
+              opacity: 0;
+            }
+            to {
+              transform: translateX(0);
+              opacity: 1;
+            }
+          }
+        </style>
+        
+        <!-- Box 1 -->
+        <div style="width: 300px; background-color: white; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); overflow: hidden; animation: slideIn 0.8s ease-out forwards; animation-delay: 0s; opacity: 0;">
+          <img src="images/adult and pediatric speech.jpg" style="width: 100%; height: 200px; object-fit: cover;">
+          <div style="padding: 20px;">
+            <h3 style="margin-top: 0; color: #000;">Adult and Pediatric</h3>
+            <p style="color: #333;font-size: 15px; text-align: justify; font-size: 16px; margin-bottom: 20px;">Our Adult and Pediatric care services provide comprehensive, age-appropriate medical support tailored to individual needs, ensuring compassionate, effective treatment for both adults and children across a wide range of health conditions.</p>
+          </div>
+        </div>
+        
+        <!-- Box 2 -->
+        <div style="width: 300px; background-color: white; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); overflow: hidden; animation: slideIn 0.8s ease-out forwards; animation-delay: 0.5s; opacity: 0;">
+          <img src="images/Cognitive speech therapy.jpeg" style="width: 100%; height: 200px; object-fit: cover;">
+          <div style="padding: 20px;">
+            <h3 style="margin-top: 0; color: #000;">Cognitive Linguistic Function</h3>
+            <p style="color: #333;font-size: 15px; text-align: justify; font-size: 16px; margin-bottom: 20px;">Cognitive linguistic function therapy enhances thinking, memory, problem-solving, and communication skills through personalized exercises, helping individuals improve daily functioning after neurological conditions or injuries.</p>
+          </div>
+        </div>
+        
+        <!-- Box 3 -->
+        <div style="width: 300px; background-color: white; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); overflow: hidden; animation: slideIn 0.8s ease-out forwards; animation-delay: 1s; opacity: 0;">
+          <img src="images/Swallowing training.webp" style="width: 100%; height: 200px; object-fit: cover;">
+          <div style="padding: 20px;">
+            <h3 style="margin-top: 0; color: #000;">Swallowing Training and Education</h3>
+            <p style="color: #333;font-size: 15px; text-align: justify; font-size: 16px; margin-bottom: 20px;">Swallowing training and education focus on improving safe eating and drinking through personalized exercises, techniques, and guidance for individuals with swallowing difficulties due to medical or neurological conditions.</p>
+          </div>
+        </div>
+      
+        <!-- Box 4 -->
+        <div style="width: 300px; background-color: white; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); overflow: hidden; animation: slideIn 0.8s ease-out forwards; animation-delay: 1.5s; opacity: 0;">
+          <img src="images/Voice therapy.jpg" style="width: 100%; height: 200px; object-fit: cover;">
+          <div style="padding: 20px;">
+            <h3 style="margin-top: 0; color: #000;">Voice Therapy</h3>
+            <p style="color: #333;font-size: 15px; text-align: justify; font-size: 16px; margin-bottom: 20px;">Voice therapy helps improve vocal strength, clarity, and quality through personalized exercises and techniques, supporting recovery from voice disorders, strain, or medical conditions affecting speech.</p>
+          </div>
+        </div>
+      
+        <!-- Box 5 -->
+        <div style="width: 300px; background-color: white; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); overflow: hidden; animation: slideIn 0.8s ease-out forwards; animation-delay: 2s; opacity: 0;">
+          <img src="images/reading and writing training.jpg" style="width: 100%; height: 200px; object-fit: cover;">
+          <div style="padding: 20px;">
+            <h3 style="margin-top: 0; color: #000;">Reading and Writing Training</h3>
+            <p style="color: #333;font-size: 15px; text-align: justify; font-size: 16px; margin-bottom: 20px;">Reading and writing training enhances literacy skills through structured, personalized exercises, supporting individuals with learning difficulties or those recovering from neurological conditions to regain effective communication and academic abilities.</p>
+          </div>
+        </div>
+
+		<!-- WhatsApp Floating Button with Tooltip -->
+			<a href="https://wa.me/971589477102?text=Hi%20there!%20I%27m%20interested%20in%20your%20services." 
+			class="whatsapp-float" target="_blank">
+				<span class="tooltip-text">Chat with us</span>
+				<img src="https://img.icons8.com/color/48/000000/whatsapp--v1.png" alt="Chat on WhatsApp">
+			</a>
+
+			<!-- Add this to your CSS -->
+			<style>
+			.whatsapp-float {
+				position: fixed;
+				bottom: 20px;
+				right: 20px;
+				z-index: 999;
+				cursor: pointer;
+				text-decoration: none;
+				display: flex;
+				align-items: center;
+			}
+
+			.whatsapp-float .tooltip-text {
+				visibility: hidden;
+				background-color: teal;
+				color: #fff;
+				text-align: center;
+				border-radius: 6px;
+				padding: 5px 10px;
+				position: absolute;
+				bottom: 60px;
+				right: 0;
+				white-space: nowrap;
+				font-size: 14px;
+				z-index: 1000;
+				opacity: 0;
+				transition: opacity 0.3s;
+			}
+
+			.whatsapp-float:hover .tooltip-text {
+				visibility: visible;
+				opacity: 1;
+			}
+
+			.whatsapp-float img {
+				width: 48px;
+				height: 48px;
+			}
+			</style>
+
+      
+      
+		<!-- Brochure Download Modal -->
+		<!-- Brochure Modal -->
+		<!-- Modal -->
+		<div class="modal fade" id="brochureModal" tabindex="-1" aria-labelledby="brochureModalLabel" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered">
+				<div class="modal-content" style="position: relative;">
+
+					<!-- Visible "X" Close Button -->
+					<button type="button" data-bs-dismiss="modal" aria-label="Close"
+						style="position: absolute; top: 10px; right: 15px; font-size: 1.5rem; border: none; background: transparent; color: white; z-index: 1055;">
+						&times;
+					</button>
+
+					<div class="modal-header"
+						style="background: #008180; color: white; border-top-left-radius: 5px; border-top-right-radius: 5px;">
+						<h5 class="modal-title mx-auto" id="brochureModalLabel">Download Our Brochure</h5>
+					</div>
+
+					<div class="modal-body">
+						<div class="form-container">
+							<form id="downloadForm" action="https://api.web3forms.com/submit" method="POST">
+								<input type="hidden" name="access_key" value="46337ffe-331e-4b26-963e-932939aa0826">
+
+								<div class="form-group mb-3">
+									<label for="name">Name</label>
+									<input type="text" id="name" name="name" class="form-control" placeholder="Your Name"
+										required>
+								</div>
+
+								<div class="form-group mb-3">
+									<label for="email">Email</label>
+									<input type="email" id="email" name="email" class="form-control" placeholder="Your Email"
+										required>
+								</div>
+
+								<div class="form-group mb-4">
+									<label for="phone">Phone Number</label>
+									<input type="tel" id="phone" name="phone" class="form-control"
+										placeholder="Your Phone Number" required>
+								</div>
+
+								<!-- Animated Button -->
+								<button type="submit" class="btn-normal">Download Brochure</button>
+
+							</form>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+		<script>
+			document.getElementById("downloadForm").addEventListener("submit", function (event) {
+				event.preventDefault();
+
+				let formData = new FormData(this);
+
+				fetch("https://api.web3forms.com/submit", {
+					method: "POST",
+					body: formData
+				})
+					.then(response => response.json())
+					.then(data => {
+						if (data.success) {
+							alert("Thank you! Your brochure is now downloading.");
+							window.location.href = "Document/TL Updated Brochure.pdf"; // Update with actual file path
+						} else {
+							alert("Form submission failed. Please try again.");
+						}
+					})
+					.catch(error => {
+						console.error("Error:", error);
+						alert("An error occurred. Please try again.");
+					});
+			});
+		</script>
+
+
+		<!--Footer -->
+		<!-- Footer Section -->
+			<div class="footer-wrapper pt-5 pb-4" style="width: 100%; height: 100%;">
+			<div class="container">
+				<div class="row g-5 justify-content-center text-center text-md-start">
+
+				<!-- Company Info -->
+				<div class="col-lg-4 col-md-6">
+					<h3 class="footer-title">Company Info</h3>
+					<p class="footer-description">
+					TrueLife Healthcare is dedicated to providing compassionate and personalized care in the comfort of your home — because your well-being is our priority.
+					</p>
+				</div>
+
+				<!-- Contact Info -->
+				<div class="col-lg-4 col-md-6">
+					<h3 class="footer-title">Contact Us</h3>
+					<ul class="footer-links">
+					<li><i class="fas fa-map-marker-alt"></i><a href="https://www.google.com/maps/place/Al+Nasriya+Building+,Block+B,+OFFICE+104/">Office No. 314, 3rd Floor, Al Nasriya Building,<br>Al Qusais, Dubai, UAE</a></li>
+					<li><i class="fas fa-envelope"></i><a href="mailto:info@truelifehomehealth.ae">info@truelifehomehealth.ae</a></li>
+					<li><i class="fas fa-phone"></i><a href="tel:+97145276692">+9714-5726692</a></li>
+					<li><i class="fas fa-phone"></i><a href="tel:+971589477102">+971-589477102</a></li>
+					</ul>
+
+					<!-- Social Links -->
+					<div class="social-links mt-3 justify-content-md-start justify-content-center">
+					<a href="#"><i class="fab fa-facebook-f"></i></a>
+					<a href="#"><i class="fab fa-instagram"></i></a>
+					<a href="#"><i class="fab fa-linkedin-in"></i></a>
+					</div>
+				</div>
+
+				<!-- Quick Links -->
+				<div class="col-lg-4 col-md-12">
+					<h3 class="footer-title">Quick Links</h3>
+					<ul class="footer-links">
+					<li><i class="fas fa-angle-right"></i><a href="index.html">Home</a></li>
+					<li><i class="fas fa-angle-right"></i><a href="services.html">Services</a></li>
+					<li><i class="fas fa-angle-right"></i><a href="about.html">About Us</a></li>
+					<li><i class="fas fa-angle-right"></i><a href="contact.html">Contact</a></li>
+					</ul>
+				</div>
+
+				</div>
+			</div>
+
+			<!-- Footer Bottom -->
+			<div class="footer-bottom mt-5 py-3">
+				<div class="container text-center">
+				<p class="mb-0">&copy; 2025 TrueLife Healthcare. All rights reserved.</p>
+				</div>
+			</div>
+
+			<!-- Internal CSS -->
+			<style>
+				.footer-wrapper {
+				background: #333;
+				color: #ffffff;
+				}
+
+				.footer-title {
+				color: #fff;
+				font-size: 20px;
+				margin-bottom: 1.2rem;
+				font-weight: 600;
+				position: relative;
+				}
+
+				.footer-title::after {
+				content: '';
+				position: absolute;
+				left: 0;
+				bottom: -8px;
+				width: 40px;
+				height: 2px;
+				background: #F18070;
+				}
+
+				.footer-description {
+				font-size: 16px;
+				color: #ffffff;
+				text-align: justify;
+				}
+
+				.footer-links {
+				list-style: none;
+				padding: 0;
+				margin: 0;
+				}
+
+				.footer-links li {
+				margin-bottom: 12px;
+				display: flex;
+				align-items: start;
+				gap: 10px;
+				}
+
+				.footer-links i {
+				color: #F18070;
+				margin-top: 3px;
+				}
+
+				.footer-links a {
+				color: #ffffff;
+				text-decoration: none;
+				font-size: 16px;
+				transition: all 0.3s ease;
+				}
+
+				.footer-links a:hover {
+				color: #F18070;
+				padding-left: 5px;
+				}
+
+				.social-links {
+				display: flex;
+				gap: 12px;
+				flex-wrap: wrap;
+				}
+
+				.social-links a {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				width: 38px;
+				height: 38px;
+				border-radius: 50%;
+				background: rgba(255, 255, 255, 0.1);
+				color: white;
+				transition: 0.3s ease;
+				}
+
+				.social-links a:hover {
+				background: #ffffff;
+				color: teal;
+				transform: scale(1.1);
+				}
+
+				.footer-bottom {
+				background: #2c2c2c;
+				color: #ccc;
+				font-size: 14px;
+				}
+
+				/* Mobile Responsiveness */
+				@media (max-width: 768px) {
+				.footer-wrapper {
+					text-align: center;
+				}
+
+				.footer-links li {
+					justify-content: center;
+				}
+
+				.footer-title::after {
+					left: 50%;
+					transform: translateX(-50%);
+				}
+
+				.social-links {
+					justify-content: center;
+				}
+				}
+			</style>
+		</div>
+
+		<!-- Font Awesome -->
+		<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+	</div>
+</div>
+
+<script src="js/jquery-3.2.1.min.js"></script>
+<script src="styles/bootstrap4/popper.js"></script>
+<script src="styles/bootstrap4/bootstrap.min.js"></script>
+<script src="plugins/OwlCarousel2-2.2.1/owl.carousel.js"></script>
+<script src="plugins/easing/easing.js"></script>
+<script src="plugins/parallax-js-master/parallax.min.js"></script>
+<script src="js/custom.js"></script>
+</body>
+</html>
